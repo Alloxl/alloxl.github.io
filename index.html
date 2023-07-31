@@ -1,72 +1,1771 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+<html data-bs-theme="dark">
+<head>
+<title>
+        PornMake.Ai Workbench | Porn Made by AI
+    </title>
+<meta name="description" content="Making Porn with AI by simpily clicking buttons. Get ready for the ultimate personalized porn experience with AI PORN. Using advanced artificial intelligence technology, our platform allows you to create and enjoy custom erotic images featuring your favorite performers. With just a few clicks, you can choose your desired performers, settings, and themes, and enjoy a unique and satisfying experience every time. Join our community of AI PORN enthusiasts and take control of your sexual fantasies with ease.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+<script src="../static/fabric.min.js"></script>
+<script src="../static/fabric-history.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<link rel="shortcut icon" type="image/png" href="../static/favicon.ico" />
+<style>
+        #workbench {
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+        .workbench_picture {
+            width: 300px;
+            height: 300px;
+            border: 1px solid white;
+            object-fit: contain;
+        }
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+        .canvas-container {
+            margin: 0 auto;
+        / / for fabrics binded canvas
+        }
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+        .row h6 {
+            margin-top: 15px;
+            margin-bottom: 0px;
+        }
 
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
-    <div class="wrapper">
-      <div class="content" role="main">
-        <h1 class="title">Hello World!</h1>
-        <img
-          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
-          class="illustration"
-          alt="Editor illustration"
-          title="Click the image!"
-        />
-        <div class="instructions">
-          <h2>Using this project</h2>
-          <p>
-            This is the Glitch <strong>Hello Website</strong> project. You can
-            use it to build your own site. Check out the code in the editor and open
-            the <span class="fileopener" data-file="TODO.md" data-line="0"
-              >TODO</span> for next steps!
-          </p>
-          <!--  🚧 TODO: ADD BUTTON HERE -->
+        @media (max-width: 280px) {
+            .workbench_picture {
+                width: 250px;
+                height: 250px;
+                border: 1px solid white;
+                object-fit: contain;
+            }
+        }
 
-          <!-- Once you've added the button from TODO.md, click it in the page -->
-          <!-- Check out the function in script.js to see how it works -->
-        </div>
-      </div>
-    </div>
-    <!-- The footer holds our remix button — you can keep or delete it ✂ -->
-    <footer class="footer">
-      <div class="links"></div>
-      <a
-        class="btn--remix"
-        target="_top"
-        href="https://glitch.com/edit/#!/remix/glitch-hello-website"
-      >
-        <img
-          src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140"
-          alt=""
-        />
-        Remix on Glitch
-      </a>
-    </footer>
-  </body>
+        @media (min-width: 281px) and (max-width: 767px) {
+            .workbench_picture {
+                width: 325px;
+                height: 325px;
+                border: 1px solid white;
+                object-fit: contain;
+            }
+        }
+
+        @media (min-width: 1280px) and (max-width: 1599px) {
+            /*ipad*/
+            .workbench_picture {
+                width: 250px;
+                height: 250px;
+                border: 1px solid white;
+                object-fit: contain;
+            }
+        }
+    </style>
+</head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H05PCDNEY5"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-H05PCDNEY5');
+</script>
+<body>
+<style>
+    /*
+    .icon {
+        width: 30px;
+    }
+
+     */
+
+    @media (max-width: 280px) {
+        .icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    @media (min-width: 281px) and (max-width: 767px) {
+        .icon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 912px) {
+        /*ipad*/
+        .icon {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+</style>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<div class="container-fluid">
+<a class="navbar-brand" href="/">PornMake.Ai</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav">
+<li class="nav-item">
+ <a class="nav-link" aria-current="page" href="/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link active" href="/workbench">Make Porn</a>
+</li>
+<li class="nav-item">
+
+<a class="nav-link active" href="https://www.patreon.com/PornmakeAI/membership" id="patreon_btn">Get Premium</a>
+<script>
+                        document.getElementById("patreon_btn").addEventListener("click", function () {
+                            gtag('event', 'btn_click', {
+                                'app_name': 'main',
+                                'screen_name': 'nav',
+                                'event_type': 'get premium'
+                            });
+                        });
+                    </script>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../account/login">Login</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://www.reddit.com/r/PornMakeOfficial/">
+<img src="../static/reddit.png" height="30" width="30" aria-label="Pornmake Official Reddit" class="icon" alt="pornmake reddit">
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://t.me/pornmake">
+<img src="../static/telegram.png" height="30" width="30" class="icon" aria-label="Pornmake Official Telegram channel" alt="pornmake telegram">
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://discord.gg/jtMweteqY7">
+<img src="../static/discord.png" height="30" width="30" class="icon" aria-label="Pornmake Official Discord server" alt="pornmake discord">
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+<div id="workbench" class="container">
+<div class="mb-3">
+<h1 style="text-align: center; margin-top: 60px;">PornMake.Ai</h1>
+</div>
+<div class="row" id="porn_editor" style="display: none; text-align: center;">
+<div class='mb-3'>
+<div class="col-12">
+<div id="canvas_container" style="width:100%; margin: 0 auto" ;> 
+<div id="canvas_bg" style="display: flex; justify-content: center;border: 1px solid white; background-repeat: no-repeat; background-size: contain; position: relative">
+<canvas id="myCanvas" style=""></canvas>
+<div id="editor_watermark">https://PornMake.Ai</div>
+<style>
+                                #editor_watermark {
+                                    position: absolute;
+                                    top: 10px;
+                                    left: 10px;
+                                    font-size: 72px;
+                                    font-family: Arial,serif;
+                                    color: rgba(255, 255, 255, 0.5);
+                                }
+
+                                @media (max-width: 1599px) {
+                                    #editor_watermark {
+                                        font-size: 18px;
+                                    }
+                                }
+                            </style>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-3" id="history_pictures">
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">Paint where you want to change, and select tags you want in this area.</bold>
+</div>
+</div>
+<div class="mb-4" id="editor_spinner" style="display:none">
+<div>
+<div class="spinner-border text-warning" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+<span id="editor_progress_text"></span>
+</div>
+</div>
+<div class="mb-2" style="text-align: left">
+<i class="far fa-heart" onclick="addFavorite($(this))"> Add to Favorites</i>
+</div>
+<div id="editor_status_text"></div>
+<div class="mb-2">
+<textarea class="form-control" id="editor_tags_list" disabled></textarea>
+</div>
+<div class="mb-3">
+<label for="brush_width_range" class="form-label">Brush Width</label>
+<input type="range" class="form-range" min="15" max="70" step="1" id="brush_width_range">
+</div>
+<div class="mb-3">
+<input type="hidden" name="csrfmiddlewaretoken" value="DLfG5q2psddDijZosNVSIUQYTb5Q99gJIB4VSjoA0JXLNLoIkEOcDJ0nzh9aF4LY">
+<button id='editor_undo_btn' class="btn btn-primary">Undo</button>
+<button id='editor_redo_btn' class="btn btn-primary">Redo</button>
+<button id='editor_pen_btn' class="btn btn-secondary">Pen</button>
+<button id='editor_eraser_btn' class="btn btn-secondary">Eraser</button>
+<button id='editor_drag_btn' class="btn btn-secondary">Drag</button>
+<button id='editor_clear_draw_btn' class="btn btn-light">Clear Draw</button>
+<button id='editor_clear_tags_btn' class="btn btn-light">Clear Tags</button>
+</div>
+<div class="mb-2">
+<button id="editor_make_new_porn_btn" class="btn btn-danger col-12">Make New Porn!
+</button>
+<button id="editor_stop_btn" class="btn btn-danger col-12" style="display:none">Stop!
+</button>
+</div>
+<div class="mb-2">
+<button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#editor_share_collapse" aria-expanded="false" aria-controls="editor_share_collapse">
+Share <i class="fas fa-share-square"></i>
+</button>
+<div class="collapse" id="editor_share_collapse">
+<div class="card">
+<button id="editor_share_reddit_btn" type="button" class="btn btn-danger" style="background-color: #ff4500;" data-sharer="reddit" data-title="I just drew a picture with AI.Check it out!" data-url="https://pornmake.ai">Share on Reddit <i class="fab fa-reddit-alien"></i>
+<button id="editor_share_twitter_btn" type="button" class="btn btn-primary" style="background-color: #26a7de" data-sharer="twitter" data-title="I just drew a picture with AI.Check it out!" data-url="https://pornmake.ai">Share on Twitter <i class="fab fa-twitter"></i></button>
+<button type="button" id="editor_download_btn" class="btn btn-success">
+Download <i class="fas fa-download"></i></button>
+</button>
+<button type="button" id="editor_share_link_btn" class="btn btn-secondary">Copy Url <i class="fas fa-link"></i></button>
+</div>
+</div>
+</div>
+<div class="mb-2">
+<button id='editor_go_back_btn' class="btn btn-light col-12">Go Back</button>
+</div>
+</div>
+<div class="row" id="porn_maker">
+<div class="col-xl-9" style="text-align: left;" id="left">
+<style>
+    #nav-tabContent {
+        border-bottom: 1px solid #495057;
+        margin-bottom: 15px;
+    }
+
+    .clearfix {
+        margin-bottom: 15px
+    }
+</style>
+<div class="mb-3" id="tags_chooser">
+<div class="col-xl-12">
+<nav>
+<div class="nav nav-tabs" id="nav-tab" role="tablist">
+
+<button class="nav-link position-relative" id="nav-cosplay-tab" data-bs-toggle="tab" data-bs-target="#nav-cosplay" type="button" role="tab" aria-controls="nav-cosplay" aria-selected="false">Cosplay
+<span class="position-absolute top-2 start-100 translate-middle badge bg-warning text-bg-warning">Prem.</span>
+</button>
+<button class="nav-link position-relative" id="nav-openpose-tab" data-bs-toggle="tab" data-bs-target="#nav-openpose" type="button" role="tab" aria-controls="nav-custom_pose" aria-selected="false">Custom Pose
+<span class="position-absolute top-2 start-100 translate-middle badge bg-warning text-bg-warning">Prem.</span>
+</button>
+</div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+<div class="tab-pane fade" id="nav-cosplay" role="tabpanel" aria-labelledby="nav-cosplay-tab" tabindex="0">
+<div class="clearfix"></div>
+<style>
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(2px);
+        color: #ffc107
+    }
+</style>
+<div class="row">
+<div id="character_form" class="mb-2"></div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">Pick any characters and select any character elements you want.</bold>
+</div>
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">Increase the weight if you think the similarity of character is not enough, or decrease the weight if the image is twisted.</bold>
+</div>
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">If 2 characters are being selected, any character elements you selected will be merged.</bold>
+</div>
+</div>
+</div>
+<script>
+    var cosplaySectionPrompts = ''
+    $(document).ready(function () {
+        const maxSelects = 2;
+        let selectedCharacters = [];
+
+        const characterModels = {"Nier Automata - 2B": "2B", "Overwatch - D.va": "Dva", "Resident Evil - Ada Wong": "AdaWong", "Resident Evil - Ashley Graham": "AshleyGraham", "Blue Archive - AsunaI Chinose": "AsunaIchinose", "Genshin Impact - Shenhe": "Shenhe", "Genshin Impact - RaidenShogun": "RaidenShogun", "League of Legends - Ahri": "kda_ahri", "World of Warcraft - Sally Whitemane": "whitemane", "World of Warcraft - Elf": "elf", "Street Fighter - ChunLi": "ChunLi", "Tomb Raider - Lara Croft": "Lara", "Frozen - Elsa": "Elsa", "Demon Slayer - Kochou Shinobu": "KochouShinobu", "Final Fantasy 7 - Tifa Lockhart": "TifaLockhart", "Final Fantasy 7 - Aerith Gainsborough": "AerithGainsborough", "Mortal Kombat - Kitana": "Kitana", "The Legend of Zelda - Zelda": "Zelda", "Cyberpunk 2077 - Lucy": "Lucy"};
+        const characterOptions = {"Nier Automata - 2B": [{"white hair": "white hair \\\\(2B\\\\)"}, {"short hair": "short hair \\\\(2B\\\\)"}, {"black thighhighs": "black thighhighs \\\\(2B\\\\)"}, {"black high heel thigh boots": "black high heel thigh boots \\\\(2B\\\\)"}, {"black dress": "black dress \\\\(2B\\\\)"}, {"black gloves": "black gloves \\\\(2B\\\\)"}, {"black hairband": "black hairband \\\\(2B\\\\)"}, {"black blindfold": "black blindfold \\\\(2B\\\\)"}], "Overwatch - D.va": [{"blue pilot suit": "blue pilot suit \\\\(D.va\\\\)"}, {"headphones": "headphones \\\\(D.va\\\\)"}, {"shoulder armor": "shoulder armor \\\\(D.va\\\\)"}, {"white glove": "white glove \\\\(D.va\\\\)"}, {"facepaint": "facepaint \\\\(D.va\\\\)"}, {"bang": "bang \\\\(D.va\\\\)"}, {"long hair": "long hair \\\\(D.va\\\\)"}, {"brown hair": "brown hair \\\\(D.va\\\\)"}], "Resident Evil - Ada Wong": [{"black hair": "black hair"}, {"red ribbed turtleneck sweater": "red ribbed turtleneck sweater"}, {"shoulder holster": "shoulder holster"}, {"boots": "boots"}], "Resident Evil - Ashley Graham": [{"blonde hair": "blonde hair"}, {"sleeveless orange sweater": "orange sweater \\\\(Ashley Graham\\\\), sleeveless"}, {"orange sweater": "orange sweater \\\\(Ashley Graham\\\\)"}, {"green plaid skirt": "green plaid skirt \\\\(Ashley Graham\\\\)"}, {"pantyhose": "((pantyhose))"}, {"red scarf": "red scarf \\\\(Ashley Graham\\\\)"}, {"boots": "boots \\\\(Ashley Graham\\\\)"}], "Blue Archive - AsunaI Chinose": [{"blue highleg strapless leotard": "blue highleg strapless leotard"}, {"bare shoulder": "bare shoulder"}, {"pantyhose": "pantyhose"}, {"fake rabbit ears": "fake rabbit ears"}, {"detached white collar": "detached white collar"}, {"blue ribbon": "blue ribbon"}, {"blonde hair": "blonde hair"}, {"blue eyes": "blue eyes"}, {"elbow white gloves": "elbow white gloves"}, {"halo": "halo"}], "Genshin Impact - Shenhe": [{"white hair": "white hair"}, {"blue eyes": "blue eyes"}, {"hair over one eye": "hair over one eye"}, {"hair ornament": "hair ornament \\\\(shenhe\\\\)"}, {"black bodysuit": "black bodysuit \\\\(shenhe\\\\), covered navel"}, {"black bodysuit with breast curtain": "black bodysuit \\\\(shenhe\\\\), covered navel, ((white breast curtain))"}, {"detached sleeves": "detached sleeves, long sleeves, wide sleeves"}, {"tassel": "tassel \\\\(shenhe\\\\)"}], "Genshin Impact - RaidenShogun": [{"long hair": "long hair"}, {"bangs": "bangs"}, {"hair ornament": "hair ornament"}, {"purple eyes": "purple eyes"}, {"purple hair": "purple hair"}, {"braid": "braid"}, {"cleavage": "cleavage"}, {"long sleeves": "long sleeves"}, {"kimono": "japanese clothes,white kimono"}, {"Sash": "sash,obi,ribbon,red ribbon"}, {"Detached collar": "collar,detached collar"}], "League of Legends - Ahri": [{"blonde hair": "blonde hair \\(kda ahri\\)"}, {"black leather bodysuit": "black leather bodysuit \\(kda ahri\\), strapless, bare shoulders"}, {"cropped white shirt": "cropped white shirt \\(kda ahri\\)"}, {"black thighhighs": "black thighhighs \\(kda ahri\\)"}, {"high heel boots": "high heel boots \\(kda ahri\\)"}, {"choker": "choker"}, {"fox ears": "fox ears"}, {"swept bangs": "swept bangs"}], "World of Warcraft - Sally Whitemane": [{"red tabard": "very long tabard, ((red tabard)), (bare shoulders:1.2), highleg"}, {"red tabard with pauldrons": "very long tabard, ((red tabard)), red pauldrons, shoulder armor, highleg"}, {"highleg": "highleg, leotard"}, {"red elbow gloves": "red elbow gloves"}, {"red crusade hat": "crusade hat, red jewelry"}, {"eyeshadow": "eyeshadow, makeup"}, {"long white hair": "white hair, long hair"}, {"red eyes": "red eyes"}], "World of Warcraft - Elf": [{"elf": "elf, night_elf, pointy_ears"}, {"circlet": "circlet"}, {"white long dress": "white_dress, long_dress, sleeveless_dress, cleavage"}, {"bare shoulders": "bare shoulders"}, {"jewelry": "jewelry"}], "Street Fighter - ChunLi": [{"blue china dress with pantyhose": "dress, blue dress, china dress, (chinese clothes), puffy short sleeves, puffy sleeves, short sleeves, sash, (pantyhose, brown pantyhose)"}, {"blue china dress": "dress, blue dress, china dress, (chinese clothes), puffy short sleeves, puffy sleeves, short sleeves, sash"}, {"double hair bun": "double bun, hair bun, bun cover"}], "Tomb Raider - Lara Croft": [{"black hair": "black hair"}, {"long hair, ponytail": "long hair, ponytail"}, {"grey tank top": "cleavage, bare shoulders, tank top, grey tank top"}, {"brown pants": "brown pants, pants, holster, belt"}, {"boots": "boots"}, {"nacklace": "jewelry, necklace"}], "Frozen - Elsa": [{"side braid": "side braid, hair over shoulder"}, {"blonde hair": "blonde hair"}, {"blue dress": "dress, blue dress, bare shoulders"}, {"blue eyes": "blue eyes"}, {"eyeshadow": "eyeshadow"}], "Demon Slayer - Kochou Shinobu": [{"short hair": "short hair"}, {"black and purple gradient hair": "black hair, purple hair, sidelocks, multicolored hair, gradient hair, updo"}, {"butterfly hair ornament": "hair ornament, butterfly hair ornament"}, {"black pants": "pants, black pants, belt, white belt"}, {"black uniform": "uniform, black uniform"}, {"white haori": "japanese_clothes, haori, white haori, long sleeves, wide sleeves"}], "Final Fantasy 7 - Tifa Lockhart": [{"white tank top": "white shirt, midriff, navel, bare shoulders, sleeveless"}, {"taut clothes": "taut shirt"}, {"long hair, hair between eyes, bangs": "long hair, hair between eyes, bangs"}, {"black hair": "black hair"}, {"earrings": "dangle earrings, earrings"}, {"elbow gloves": "elbow gloves, black gloves"}, {"suspender black skirt": "(suspender skirt, suspenders), black skirt"}], "Final Fantasy 7 - Aerith Gainsborough": [{"hairstyle": "long hair, bang, sidelocks, parted bangs, ponytail"}, {"hair ribbon": "hair ribbon, ribbon, pink ribbon, bow, hair bow"}, {"brown hair": "brown hair"}, {"choker": "choker, ribbon choker"}, {"cleavage": "cleavage"}, {"pink dress": "dress, pink dress, long dress"}, {"red jacket": "jacket, short sleeves, open clothes, open jacket, red jacket, cropped jacket"}, {"bracelet": "bracelet, bangle"}], "Mortal Kombat - Kitana": [{"hairstyle": "short hair, black hair, hair bun"}, {"blue headband": "headband, blue headband"}, {"gloves": "gloves, elbow gloves, fingerless gloves"}, {"blue bodysuit": "bodysuit, blue bodysuit, ninja"}, {"shoulder armor": "armor, shoulder armor"}, {"cleavage cutout": "cleavage, clothing cutout, cleavage cutout"}], "The Legend of Zelda - Zelda": [{"short hair": "short hair"}, {"blonde hair": "blonde hair"}, {"hairstyle": "parted bangs, crown braid"}, {"pointy ears": "pointy ears"}, {"gloves": "black gloves, fingerless gloves"}, {"black pants": "black pants, belt"}, {"blue shirt": "blue shirt, long sleeves"}], "Cyberpunk 2077 - Lucy": [{"hairstyle": "short hair, bangs, parted bangs"}, {"white hair": "white hair"}, {"open jacket": "long sleeves, off shoulder, open jacket, white jacket,"}, {"Black leotard": "black leotard, sleeveless turtleneck leotard, bodysuit"}]};
+
+        function createDropdown(selectIndex) {
+            let dropdown = $('<select class="character-select form-select form-select-lg mb-3"></select>').attr('id', `character_select_${selectIndex}`);
+            dropdown.append($('<option></option>').attr('value', '').text('Select a character'));
+
+            for (let character in characterModels) {
+                if (!selectedCharacters.includes(character))
+                    dropdown.append($('<option></option>').attr('value', characterModels[character]).text(character));
+            }
+
+            dropdown.on('change', handleCharacterChange);
+            return dropdown;
+        }
+
+        function createRangeInput(selectIndex) {
+            let container = $('<div></div>')
+            let rangeLabel = $('<label>Weight</label>').attr('id', `range_label_${selectIndex}`);
+            let rangeInput = $('<input>').attr('type', 'range').attr('id', `range_input_${selectIndex}`);
+            let output = $('<output>0.4</output>').attr('id', `range_output_${selectIndex}`);
+            let hiddenInput = $('<input>').attr('type', 'hidden').attr('id', `hidden_input_${selectIndex}`);
+            container.css('text-align', 'center');
+            container.css('position', 'relative');
+            output.addClass("mb-3")
+            rangeInput.addClass("col-12 form-range character-range");
+            rangeInput.attr('max', 1);
+            rangeInput.attr('min', 0.05);
+            rangeInput.attr('step', 0.05);
+            rangeInput.val(0.4);
+            container.append(rangeLabel);
+            //rangeInput.on('input', handleRangeChange);
+            container.append(rangeInput);
+            container.append(hiddenInput);
+            container.append(output);
+            
+            let overlay = $('<div></div>').attr('id', `overlay_${selectIndex}`);
+            overlay.addClass('overlay');
+            overlay.html(`This feature is available for Premium users only. <a href="https://www.patreon.com/PornmakeAI/membership">Get Premium</a>!`)
+            container.append(overlay);
+            
+
+            return container;
+        }
+
+        function createCheckBoxes(selectIndex, options) {
+            let container = $('<div></div>').addClass('flex col flex-wrap mb-5');
+
+            options.forEach(option => {
+                let key = Object.keys(option)[0];
+                let value = option[key];
+                let checkboxId = `checkbox_${selectIndex}_${key.replace(/\s+/g, '_')}`;
+
+                let input = $('<input>').attr('type', 'checkbox').addClass('btn-check').attr('name', 'cosplay-options').attr('id', checkboxId).attr('value', value).attr('autocomplete', 'off');
+                let label = $('<label></label>').attr('for', checkboxId).addClass('btn btn-outline-light text-base px-4 py-2 m-2').text(key);
+                //input.on('change', handleCheckboxChange);
+                container.append(input);
+                container.append(label);
+            });
+
+            return container;
+        }
+
+        function handleCharacterChange(event) {
+            let selectIndex = parseInt(event.target.id.split('_')[2]);
+            let selectedCharacter = $(event.target).find("option:selected").text();
+            let previousCharacter = selectedCharacters[selectIndex];
+
+            if (previousCharacter) {
+                let index = selectedCharacters.indexOf(previousCharacter);
+                if (index !== -1) {
+                    selectedCharacters.splice(index, 1);
+                }
+            }
+
+            if (!selectedCharacters.includes(selectedCharacter)) {
+                selectedCharacters[selectIndex] = selectedCharacter;
+            }
+
+            // 删除具有相同索引的复选框和范围输入
+            $(`#checkboxes_container_${selectIndex}`).remove();
+            $(`#range_label_${selectIndex}`).remove()
+            $(`#range_input_${selectIndex}`).remove();
+            $(`#range_output_${selectIndex}`).remove();
+            
+            $(`#overlay_${selectIndex}`).remove();
+            
+
+            //$(`#character_select_${selectIndex}`).remove();
+
+            if (selectedCharacter && characterOptions[selectedCharacter]) {
+                let options = characterOptions[selectedCharacter];
+                let checkBoxes = createCheckBoxes(selectIndex, options);
+                let rangeInput = createRangeInput(selectIndex);
+
+                $(`#character_select_${selectIndex}`).after(rangeInput);
+                $(`#range_output_${selectIndex}`).after(checkBoxes.attr('id', `checkboxes_container_${selectIndex}`));
+
+                if ($('.character-select').length < maxSelects) {
+                    let nextDropdown = createDropdown(selectIndex + 1);
+                    $('#character_form').append(nextDropdown);
+                }
+
+            }
+
+            // 更新所有其他下拉框的选项
+            $(".character-select").each(function () {
+                let currentIndex = parseInt($(this).attr("id").split("_")[2]);
+
+                if (currentIndex !== selectIndex) {
+                    let currentSelectedValue = $(this).val();
+
+                    // 保存当前选中的值并重建下拉框的选项
+                    $(this).empty();
+                    $(this).append($('<option></option>').attr('value', '').text('Select a character'));
+
+                    for (let character in characterModels) {
+                        if (!selectedCharacters.includes(character) || character === selectedCharacters[currentIndex]) {
+                            $(this).append($('<option></option>').attr('value', characterModels[character]).text(character));
+                        }
+                    }
+
+                    // 重新选择之前选中的值
+                    $(this).val(currentSelectedValue);
+                }
+            });
+        }
+
+
+        $('#character_form').append(createDropdown(0));
+    });
+</script>
+<div class="clearfix"></div>
+</div>
+<div class="tab-pane fade" id="nav-openpose" role="tabpanel" aria-labelledby="nav-openpose-tab" tabindex="0">
+<div class="clearfix"></div>
+<div class="mb-3">
+<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg" id="pose_select">
+<option selected value=''>Disabled</option>
+<option value='{"width":512,"height":512,"keypoints":[[241,77],[241,120],[191,118],[177,183],[163,252],[298,118],[317,182],[332,245],[225,241],[213,359],[215,454],[270,240],[282,360],[286,456],[232,59],[253,60],[225,70],[260,72]]}'>
+Default pose
+</option>
+<option value='{"width":768,"height":1152,"keypoints":[[501,362],[487,461],[387,430],[298,570],[179,681],[590,486],[607,652],[571,529],[312,715],[102,757],[299,863],[439,740],[635,712],[472,854],[472,332],[523,323],[439,346],[559,325]]}'>
+Spread Leg
+</option>
+<option value='{"width":768,"height":1152,"keypoints":[[311,298],[326,356],[243,368],[134,385],[119,387],[413,338],[457,469],[275,474],[362,575],[254,702],[511,869],[475,553],[259,519],[450,715],[282,279],[330,274],[260,288],[369,271]]}'>
+Huddle
+</option>
+
+<option value='{"width":900,"height":1272,"keypoints":[[446,359],[446,475],[302,457],[269,689],[409,722],[579,445],[622,669],[476,466],[372,1041],[401,727],[262,1043],[579,1044],[533,704],[661,1042],[380,316],[508,316],[362,373],[527,361]]}'>
+Sitting
+</option>
+<option value='{"width":512,"height":768,"keypoints":[[270,304],[259,376],[149,381],[215,581],[248,719],[371,371],[335,569],[283,718],[223,589],[198,723],[173,721],[347,582],[369,763],[376,735],[229,278],[295,272],[177,280],[329,263]]}'>
+Kneeling
+</option>
+</select>
+</div>
+<div class="row" style="position: relative">
+<div class="overlay"></div>
+<div class="flex col flex-wrap">
+<div class="mb-3 row">
+<gradio-app style="display:none">
+<canvas id="openpose_editor_canvas"></canvas>
+<div id="hide_json" class="gr-block gr-box relative w-full border-solid border border-gray-200 gr-padded" style="display:none"><label class="block w-full"><span class="text-gray-500 text-[0.855rem] mb-2 block dark:text-gray-200 relative z-40">json</span>
+<textarea data-testid="textbox" class="scroll-hide block gr-box gr-input w-full gr-text-input" placeholder="" rows="1" disabled="" style="overflow-y: scroll; height: 42px;"></textarea></label>
+</div>
+</gradio-app>
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">Drag keypoints of 2 dimensional body and select appropriate View tags to custom character pose and viewpoint</bold>
+</div>
+</div>
+<div class="mb-3">
+<label for="openpose_zoom_range" class="form-label">Zoom</label>
+<input type="range" class="form-range" min="0.1" max="2" step="0.1" value="1" id="openpose_zoom_range">
+</div>
+<div class="mb-3">
+<button id='openpose_save_btn' class="btn btn-primary col-12">Save pose</button>
+</div>
+<div class="mb-5">
+<button id='openpose_delete_btn' class="btn btn-danger col-12 col">Delete pose</button>
+</div>
+<hr />
+<div class="mb-3">
+<h6>Image to pose</h6>
+</div>
+<div class="mb-3">
+<div class="col">
+<input class="form-control" type="file" id="transform_image" accept="image/*">
+</div>
+</div>
+<div class="mb-2" id="maker_transform_spinner" style="display:none;text-align:center">
+<div>
+<div class="spinner-border text-warning" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+<span id="maker_transform_progress_text"></span>
+</div>
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">The image size is limited to 1MB, and the format can be either jpg, png, or webp.</bold>
+</div>
+</div>
+<div class="mb-3">
+<button id="maker_transform_btn" class="btn btn-primary col-12">Transform to pose
+</button>
+</div>
+<script>
+
+            
+
+            $('#pose_select').on('input', function () {
+                if ($(this).find(":selected").text() === "Disabled") {
+                    $("gradio-app").css("display", "none")
+                } else {
+                    $("gradio-app").css("display", "block")
+                    const j = $(this).find(":selected").val();
+                    loadJSON(j);
+                }
+                
+                    var overlay = new fabric.Rect({
+                        left: 0,
+                        top: 0,
+                        width: openpose_editor_canvas.width,
+                        height: openpose_editor_canvas.height,
+                        fill: 'rgba(0, 0, 0, 0.5)'
+                    });
+
+                    // 将覆盖层添加到Canvas中
+                    openpose_editor_canvas.add(overlay);
+                    openpose_editor_canvas.skipTargetFind = true;
+                    openpose_editor_canvas.selection = false;
+                    const text = new fabric.Text('This feature is available for Premium users only.', {
+                        left: 0,
+                        top: 300,
+                        fill: '#ffc107',
+                        fontSize: 32
+                    });
+                    const text2 = new fabric.Text('Get Premium!', {
+                        left: 0,
+                        top: 350,
+                        fill: 'blue',
+                        fontSize: 32
+                    });
+                    text2.set('underline', true);
+                    openpose_editor_canvas.add(text, text2);
+                    openpose_editor_canvas.on('mouse:down', function (options) {
+
+                        const pointer = openpose_editor_canvas.getPointer(options.e);
+                        if (overlay.containsPoint(pointer)) {
+                            // 在此处执行点击超链接的操作
+                            window.open('https://www.patreon.com/PornmakeAI/membership', '_blank');
+                        }
+                    });
+
+                    openpose_editor_canvas.on('touch:gesture:tap', function (options) {
+                        const pointer = options.pointer;
+                        if (overlay.containsPoint(pointer)) {
+                            // 在此处执行点击超链接的操作
+                            window.open('https://www.patreon.com/PornmakeAI/membership', '_blank');
+                        }
+                    });
+                
+            })
+
+            $("#openpose_zoom_range").on("input", function () {
+                let zoomFactor = $(this).val();
+                openpose_editor_canvas.setZoom(zoomFactor);
+                openpose_editor_canvas.setViewportTransform([zoomFactor, 0, 0, zoomFactor, (1 - zoomFactor) * openpose_editor_canvas.width / 2, (1 - zoomFactor) * openpose_editor_canvas.height / 2]);
+                openpose_editor_canvas.renderAll();
+
+            });
+
+
+        </script>
+<script src="/static/main.js"></script>
+</div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<script>
+    add_categories = () =>{
+        let tabs = [];
+        let titles = [];
+        let btn_groups = [];
+        let btn_tab = $();
+        let div_tab_content = $();
+        for (const category of categories){
+
+            if (category.type === 0){
+                tabs.push(category)
+            } else if (category.type === 1){
+                titles.push(category)
+            } else if (category.type === 2){
+                btn_groups.push(category)
+            }
+        }
+
+        for (const tab of tabs){
+            if ($('#workbench .nav-link.active').length === 0){
+                    btn_tab = $(`<button class="nav-link active" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">${tab.name}</button>`);
+                    div_tab_content = $(`<div class="tab-pane fade show active" role="tabpanel" tabindex="0"></div>`);
+                 } else {
+                    btn_tab = $(`<button class="nav-link position-relative" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">${tab.name}</button>`);
+                    div_tab_content = $(`<div class="tab-pane fade" role="tabpanel" tabindex="0"></div>`);
+                 }
+
+                let lower_name = tab.name.toLowerCase();
+                btn_tab.attr('id', `nav-${lower_name}-tab`);
+                btn_tab.attr('data-bs-target', `#nav-${lower_name}`);
+                btn_tab.attr('aria-controls', `nav-${lower_name}`);
+                btn_tab.attr('aria-id', tab.id);
+                $("#nav-cosplay-tab").before(btn_tab);
+
+                div_tab_content.attr('category-id', tab.id);
+                div_tab_content.attr('id', `nav-${lower_name}`);
+                div_tab_content.attr('aria-labelledby', `nav-${lower_name}-tab`);
+                div_tab_content.attr('aria-id', tab.id);
+                $('#nav-cosplay').before(div_tab_content);
+        }
+        for (const title of titles){
+            let h6_title = $(`<h6>${title.name}</h6>`);
+            h6_title.attr('category-id', title.id);
+            let parent = $(`div[category-id=${title.parent_id}]`);
+            let row_div = $(`<div class="mb-2">`);
+            parent.append(row_div);
+            row_div.append(h6_title);
+            let div_row = $('<div class="row mb-4"></div>');
+            let div_flex = $('<div class="flex col flex-wrap"></div>');
+            div_row.append(div_flex);
+            row_div.after(div_row)
+        }
+
+
+        for (const btn_group of btn_groups){
+            let lower_name = btn_group.name.toLowerCase();
+            let div_btn_group = $(`<div class="btn-group" style="margin-right:10px"></div>`);
+            let button_group = $(`<button class="btn btn-outline-light dropdown-toggle text-base px-4 py-2 m-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">${lower_name}</button>`);
+            while (lower_name.includes(" ")){lower_name = lower_name.replace(" ", "_")}
+            button_group.attr('id', `${lower_name}-dropdown`);
+            button_group.attr('aria-text', `${lower_name}`)
+            let ul_dropdown = $(`<ul class="dropdown-menu" aria-labelledby="${lower_name}-dropdown"></ul>`);
+            div_btn_group.append(button_group);
+            div_btn_group.append(ul_dropdown)
+            ul_dropdown.attr('category-id', btn_group.id);
+
+            let parent = $(`h6[category-id=${btn_group.parent_id}]`).parent();
+            let div_flex = parent.next().find(".flex.col.flex-wrap");
+            div_flex.append(div_btn_group);
+    }
+
+    get_category_name = (id) =>{
+        for (const category of categories){
+            if (category.id === id){
+                let name = category.name.toLowerCase();
+                while (name.includes(" ")){name = name.replace(" ", "_").replace(":", "_")}
+                return name;
+            }
+        }
+    }
+
+    get_category_type = (id) =>{
+        for (const category of categories){
+            if (category.id === id){
+                return category.type;
+            }
+        }
+    }
+
+    add_tags = () => {
+        for (const tag of tags) {
+            if (tag.category_id === null || get_category_type(tag.category_id) === 0) {
+                continue;  // ignore tags without categories
+            }
+
+            let lower_tag = tag.name.toLowerCase();
+            while (lower_tag.includes(" ") || lower_tag.includes(":")) {
+                lower_tag = lower_tag.replace(" ", "_").replace(":", "_");
+            }
+
+            let label_tag = $(`<label class="btn btn-outline-light text-base px-4 py-2 m-2"></label>`);
+            let input_tag = $(`<input type="radio" class="btn-check" autocomplete="off">`);
+
+            if (tag.group === ""){
+                input_tag.attr('id', `${get_category_name(tag.category_id)}-${lower_tag}`);
+                input_tag.attr('name', `${get_category_name(tag.category_id)}-option`);
+                label_tag.attr('for', `${get_category_name(tag.category_id)}-${lower_tag}`);
+            } else {
+                input_tag.attr('id', `${tag.group}-${lower_tag}`);
+                input_tag.attr('name', `${tag.group}-option`);
+                label_tag.attr('for', `${tag.group}-${lower_tag}`);
+            }
+
+
+            input_tag.val(tag.value);
+            label_tag.text(tag.name);
+
+            // Get the parent and flex div
+            let parent = $(`h6[category-id=${tag.category_id}]`);
+            if (parent.length > 0){
+                let div_row = parent.parent().next(".row.mb-4");
+                let div_flex = div_row.find(".flex.col.flex-wrap");
+
+                // If the flex div doesn't exist, create one
+                if (div_row.length === 0) {
+                    div_row = $('<div class="row mb-4"></div>');
+                    parent.parent().after(div_row);
+                }
+
+                if (div_flex.length === 0) {
+                    div_flex = $('<div class="flex col flex-wrap"></div>');
+                    div_row.append(div_flex);
+                    const input_none = $(`<input type="radio" class="btn-check" autocomplete="off">`);
+                    const label_none = $(`<label class="btn btn-outline-light text-base px-4 py-2 m-2">None</label>`);
+                    input_none.val("");
+
+                    if (tag.group === ""){
+                        input_none.attr('id', `${get_category_name(tag.category_id)}-none`);
+                        input_none.attr('name', `${get_category_name(tag.category_id)}-option`);
+                        label_none.attr('for', `${get_category_name(tag.category_id)}-none`);
+                    } else {
+                        input_none.attr('id', `${tag.group}-none`);
+                        input_none.attr('name', `${tag.group}-option`);
+                        label_none.attr('for', `${tag.group}-none`);
+                    }
+
+
+                    div_flex.append(input_none);
+                    div_flex.append(label_none);
+                }
+
+                // Append the tag to the flex div
+                div_flex.append(input_tag);
+                div_flex.append(label_tag);
+            }
+
+            parent = $(`ul[category-id=${tag.category_id}]`);
+            if (parent.length > 0) {
+                let li = $('<li></li>');
+                li.append(input_tag);
+                li.append(label_tag);
+                parent.append(li);
+                }
+            }
+        }
+    }
+
+    const categories = JSON.parse('[{"id": 8, "name": "Basic", "description": "\u57fa\u672c", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 9, "name": "Hair", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 10, "name": "Face", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 11, "name": "Body", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 12, "name": "Clothing", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 13, "name": "Action", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 14, "name": "Place", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 15, "name": "View", "description": "", "type": 0, "index": 0, "premium": 0, "parent_id": null}, {"id": 16, "name": "Hair Length", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 9}, {"id": 17, "name": "Race/Country", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 8}, {"id": 18, "name": "Sex", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 8}, {"id": 19, "name": "How Many People", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": null}, {"id": 20, "name": "Age", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 8}, {"id": 21, "name": "Picture Style", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 8}, {"id": 23, "name": "Hair Style", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 9}, {"id": 24, "name": "Hair Color", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 9}, {"id": 25, "name": "Forehead", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 26, "name": "Eyes Color", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 27, "name": "Facial attractiveness", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 28, "name": "Facial Expression", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 29, "name": "Other", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 30, "name": "Accessory 1", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 31, "name": "Accessory 2", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 32, "name": "Accessory 3", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 33, "name": "Accessory 4", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 34, "name": "Accessory 5", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 35, "name": "Accessory 6", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 36, "name": "Accessory 7", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 37, "name": "Accessory 8", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 38, "name": "Accessory 9", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 39, "name": "Clothing texture", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 40, "name": "Clothing Modifier", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 41, "name": "Set", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 42, "name": "Upper", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 43, "name": "Lower", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 12}, {"id": 44, "name": "Action", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 13}, {"id": 45, "name": "Breast", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 46, "name": "Ass", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 47, "name": "Body Fitness", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 49, "name": "Skin", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 50, "name": "Texture", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 51, "name": "Other", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 11}, {"id": 52, "name": "Time", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 14}, {"id": 53, "name": "Object", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 14}, {"id": 54, "name": "Location", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 14}, {"id": 55, "name": "Lighting", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 14}, {"id": 62, "name": "woman", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 18}, {"id": 63, "name": "man", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 18}, {"id": 77, "name": "Hair Modifier 1", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 9}, {"id": 79, "name": "Hair Modifier 2", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 9}, {"id": 84, "name": "Direction", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 15}, {"id": 85, "name": "Distance", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 15}, {"id": 99, "name": "Dress", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 41}, {"id": 100, "name": "Panties", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 43}, {"id": 101, "name": "Bra", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 42}, {"id": 102, "name": "Facing", "description": "", "type": 1, "index": 0, "premium": 0, "parent_id": 10}, {"id": 103, "name": "Jacket", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 42}, {"id": 104, "name": "Shirt", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 42}, {"id": 105, "name": "Sweater", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 42}, {"id": 106, "name": "Coat", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 42}, {"id": 108, "name": "mini skirt", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 43}, {"id": 109, "name": "long skirt", "description": "", "type": 2, "index": 0, "premium": 0, "parent_id": 43}, {"id": 57, "name": "Chinese", "description": "", "type": 2, "index": 1, "premium": 0, "parent_id": 17}, {"id": 58, "name": "Korean", "description": "", "type": 2, "index": 1, "premium": 0, "parent_id": 17}, {"id": 59, "name": "Japanese", "description": "", "type": 2, "index": 1, "premium": 0, "parent_id": 17}, {"id": 60, "name": "White People", "description": "", "type": 2, "index": 1, "premium": 0, "parent_id": 17}, {"id": 61, "name": "Arab", "description": "", "type": 2, "index": 1, "premium": 0, "parent_id": 17}]')
+    const tags = JSON.parse('[{"id": 29, "name": "1 woman", "description": "", "value": "woman", "group": "sex", "index": 0, "premium": 0, "category_id": 62}, {"id": 30, "name": "2 women", "description": "", "value": "(2women:2)", "group": "sex", "index": 0, "premium": 0, "category_id": 62}, {"id": 31, "name": "1 man", "description": "", "value": "manly man", "group": "sex", "index": 0, "premium": 0, "category_id": 63}, {"id": 32, "name": "2 men", "description": "", "value": "(2men:2), manly man", "group": "sex", "index": 0, "premium": 0, "category_id": 63}, {"id": 33, "name": "18-28", "description": "", "value": "twenties", "group": "age", "index": 0, "premium": 0, "category_id": 20}, {"id": 34, "name": "29-39", "description": "", "value": "thirties", "group": "age", "index": 0, "premium": 0, "category_id": 20}, {"id": 35, "name": "40-65", "description": "", "value": "aging", "group": "age", "index": 0, "premium": 0, "category_id": 20}, {"id": 36, "name": "65+", "description": "", "value": "elder", "group": "age", "index": 0, "premium": 0, "category_id": 20}, {"id": 37, "name": "Normal", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 21}, {"id": 38, "name": "Realistic", "description": "", "value": "(RAW photo, best quality, masterpiece:1.1), (realistic, photo-realistic:1.2), ultra-detailed, ultra high res, physically-based rendering", "group": "", "index": 0, "premium": 0, "category_id": 21}, {"id": 42, "name": "Short hair", "description": "", "value": "short hair", "group": "", "index": 0, "premium": 0, "category_id": 16}, {"id": 43, "name": "Long hair", "description": "", "value": "long hair", "group": "", "index": 0, "premium": 0, "category_id": 16}, {"id": 44, "name": "Bangs", "description": "", "value": "bangs", "group": "", "index": 0, "premium": 0, "category_id": 79}, {"id": 45, "name": "Bobcut", "description": "", "value": "bobcut", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 46, "name": "Braided", "description": "", "value": "braided", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 47, "name": "Hair bun", "description": "", "value": "hair bun", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 48, "name": "Messy", "description": "", "value": "messy hair", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 49, "name": "Pony tail", "description": "", "value": "pony tail", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 50, "name": "Double tail", "description": "", "value": "double tail", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 51, "name": "Straight", "description": "", "value": "straight hair", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 52, "name": "Slicked", "description": "", "value": "slicked back", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 53, "name": "Pixie", "description": "", "value": "pixie cut", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 54, "name": "Wet hair", "description": "", "value": "(wet hair:1.4)", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 55, "name": "Blue hair", "description": "", "value": "blue hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 56, "name": "Black hair", "description": "", "value": "black hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 57, "name": "Green hair", "description": "", "value": "green hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 58, "name": "Purple hair", "description": "", "value": "purple hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 59, "name": "Red hair", "description": "", "value": "red hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 60, "name": "Pink hair", "description": "", "value": "pink hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 61, "name": "Yellow hair", "description": "", "value": "yellow hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 62, "name": "Blonde hair", "description": "", "value": "blonde hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 63, "name": "White hair", "description": "", "value": "white hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 64, "name": "Grey hair", "description": "", "value": "grey hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 65, "name": "Brown hair", "description": "", "value": "brown hair", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 66, "name": "Large forehead", "description": "", "value": "large forehead", "group": "", "index": 0, "premium": 0, "category_id": 25}, {"id": 67, "name": "Blue", "description": "", "value": "blue eyes", "group": "", "index": 0, "premium": 0, "category_id": 26}, {"id": 68, "name": "Black", "description": "", "value": "black eyes", "group": "", "index": 0, "premium": 0, "category_id": 26}, {"id": 69, "name": "Red", "description": "", "value": "red eyes", "group": "", "index": 0, "premium": 0, "category_id": 26}, {"id": 70, "name": "Brown", "description": "", "value": "brown eyes", "group": "", "index": 0, "premium": 0, "category_id": 26}, {"id": 71, "name": "Beautiful", "description": "", "value": "beautiful", "group": "", "index": 0, "premium": 0, "category_id": 27}, {"id": 72, "name": "Ugly", "description": "", "value": "(ugly)", "group": "", "index": 0, "premium": 0, "category_id": 27}, {"id": 73, "name": "Cool", "description": "", "value": "cool", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 74, "name": "Happy", "description": "", "value": "happy", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 75, "name": "Smile", "description": "", "value": "smile", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 76, "name": "Crying", "description": "", "value": "crying", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 77, "name": "Sorrow", "description": "", "value": "sorrow", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 78, "name": "Seductive", "description": "", "value": "seductive", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 79, "name": "Pouting lips", "description": "", "value": "pouting lips", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 80, "name": "Shocked", "description": "", "value": "shocked", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 81, "name": "Angry", "description": "", "value": "angry", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 82, "name": "Aegyo sal", "description": "", "value": "(aegyo sal)", "group": "", "index": 0, "premium": 0, "category_id": 29}, {"id": 83, "name": "Hat", "description": "", "value": "hat", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 84, "name": "Hijab", "description": "", "value": "hijab", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 85, "name": "Niqab", "description": "", "value": "niqab", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 86, "name": "Viking Helmet", "description": "", "value": "viking helmet", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 87, "name": "Scarf", "description": "", "value": "scarf", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 88, "name": "Collar", "description": "", "value": "collar", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 89, "name": "Tie", "description": "", "value": "tie", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 90, "name": "Necklace", "description": "", "value": "necklace", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 91, "name": "Choker", "description": "", "value": "choker", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 92, "name": "Gloves", "description": "", "value": "gloves", "group": "", "index": 0, "premium": 0, "category_id": 32}, {"id": 93, "name": "Sunglasses", "description": "", "value": "sunglasses", "group": "", "index": 0, "premium": 0, "category_id": 33}, {"id": 94, "name": "Eyeglasses", "description": "", "value": "eyeglasses", "group": "", "index": 0, "premium": 0, "category_id": 33}, {"id": 95, "name": "High socks", "description": "", "value": "high socks", "group": "", "index": 0, "premium": 0, "category_id": 34}, {"id": 96, "name": "Pantyhose", "description": "", "value": "pantyhose", "group": "", "index": 0, "premium": 0, "category_id": 34}, {"id": 97, "name": "Thigh socks", "description": "", "value": "thigh socks", "group": "", "index": 0, "premium": 0, "category_id": 34}, {"id": 98, "name": "Stocking", "description": "", "value": "stocking", "group": "", "index": 0, "premium": 0, "category_id": 34}, {"id": 99, "name": "Boots", "description": "", "value": "boots", "group": "", "index": 0, "premium": 0, "category_id": 35}, {"id": 100, "name": "High heels", "description": "", "value": "high heels", "group": "", "index": 0, "premium": 0, "category_id": 35}, {"id": 101, "name": "Midriff", "description": "", "value": "midriff", "group": "", "index": 0, "premium": 0, "category_id": 36}, {"id": 102, "name": "Cleavage", "description": "", "value": "cleavage", "group": "", "index": 0, "premium": 0, "category_id": 37}, {"id": 103, "name": "Earrings", "description": "", "value": "earings", "group": "", "index": 0, "premium": 0, "category_id": 38}, {"id": 104, "name": "Leather", "description": "", "value": "leather", "group": "", "index": 0, "premium": 0, "category_id": 39}, {"id": 105, "name": "Silk", "description": "", "value": "(silk)", "group": "", "index": 0, "premium": 0, "category_id": 39}, {"id": 106, "name": "Fabric", "description": "", "value": "(fabric)", "group": "", "index": 0, "premium": 0, "category_id": 39}, {"id": 107, "name": "Strapless", "description": "", "value": "strapless", "group": "", "index": 0, "premium": 0, "category_id": 40}, {"id": 108, "name": "Sleeveless", "description": "", "value": "sleeveless", "group": "", "index": 0, "premium": 0, "category_id": 40}, {"id": 109, "name": "Long sleeves", "description": "", "value": "long sleeves", "group": "", "index": 0, "premium": 0, "category_id": 40}, {"id": 110, "name": "Short sleeves", "description": "", "value": "short sleeves", "group": "", "index": 0, "premium": 0, "category_id": 40}, {"id": 111, "name": "Nude", "description": "", "value": "nude", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 112, "name": "Ballet", "description": "", "value": "ballet clothes", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 113, "name": "Bikini", "description": "", "value": "bikini", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 114, "name": "Microkini", "description": "", "value": "microkini", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 115, "name": "bathrobe", "description": "", "value": "bathrobe", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 116, "name": "Casual clothing", "description": "", "value": "casual clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 117, "name": "Cheerleader", "description": "", "value": "cheerleader", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 118, "name": "Chinese cheongsam", "description": "", "value": "qipao, chinese clothes", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 119, "name": "Doctor", "description": "", "value": "doctor", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 120, "name": "Red dress", "description": "", "value": "Red dress", "group": "dress", "index": 0, "premium": 0, "category_id": null}, {"id": 121, "name": "Fantasy", "description": "", "value": "fantasy", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 122, "name": "Flight attendant", "description": "", "value": "flight attendant", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 123, "name": "Gown", "description": "", "value": "gown", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 124, "name": "Halloween costume", "description": "", "value": "halloween costume", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 125, "name": "Leather clothing", "description": "", "value": "leather clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 126, "name": "Leotard", "description": "", "value": "leotard", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 127, "name": "Maid", "description": "", "value": "maid", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 128, "name": "Medieval", "description": "", "value": "medieval", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 129, "name": "Military", "description": "", "value": "military", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 130, "name": "Nightgown", "description": "", "value": "nightgown", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 131, "name": "Ninja", "description": "", "value": "ninja", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 132, "name": "Nun", "description": "", "value": "nun", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 133, "name": "Nurse", "description": "", "value": "nurse", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 134, "name": "Pajamas", "description": "", "value": "pajamas", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 135, "name": "Pirate", "description": "", "value": "pirate", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 136, "name": "Police", "description": "", "value": "police", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 137, "name": "Professor", "description": "", "value": "professor", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 138, "name": "Sailor", "description": "", "value": "sailor", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 139, "name": "Salwar", "description": "", "value": "salwar", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 140, "name": "Santa costume", "description": "", "value": "santa costume", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 141, "name": "Sari", "description": "", "value": "sari", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 142, "name": "Soccer", "description": "", "value": "soccer,sportswear", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 143, "name": "Suit", "description": "", "value": "suit", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 144, "name": "Sundress", "description": "", "value": "(sundress:2)", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 145, "name": "Teacher", "description": "", "value": "teacher", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 146, "name": "Tribal clothing", "description": "", "value": "tribal clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 147, "name": "Tennis", "description": "", "value": "tennis clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 148, "name": "Traditional clothing", "description": "", "value": "traditional clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 149, "name": "Viking", "description": "", "value": "viking warrior clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 150, "name": "Waitress", "description": "", "value": "waitress", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 151, "name": "Wedding dress", "description": "", "value": "wedding dress", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 152, "name": "Western clothing", "description": "", "value": "western clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 153, "name": "Witch", "description": "", "value": "witch", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 154, "name": "Red bra", "description": "", "value": "Red bra", "group": "bra", "index": 0, "premium": 0, "category_id": null}, {"id": 155, "name": "Blue coat", "description": "", "value": "Blue coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 156, "name": "Blue jacket", "description": "", "value": "blue jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 157, "name": "Lab coat", "description": "", "value": "lab coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 42}, {"id": 158, "name": "Blue shirt", "description": "", "value": "blue shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 159, "name": "Blue sweater", "description": "", "value": "Blue sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 160, "name": "Sports bra", "description": "", "value": "sports bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 42}, {"id": 161, "name": "Trench coat", "description": "", "value": "trench coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 42}, {"id": 162, "name": "Tunic", "description": "", "value": "tunic", "group": "Upper", "index": 0, "premium": 0, "category_id": 42}, {"id": 163, "name": "Contour leggings", "description": "", "value": "contour leggings", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 164, "name": "Blue long skirt", "description": "", "value": "blue long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 165, "name": "Micro skirt", "description": "", "value": "micro skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 166, "name": "Blue mini skirt", "description": "", "value": "Blue mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 167, "name": "Short shorts", "description": "", "value": "short shorts", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 168, "name": "Blue panties", "description": "", "value": "Blue panties", "group": "panties", "index": 0, "premium": 0, "category_id": null}, {"id": 169, "name": "Suspender belt", "description": "", "value": "(garter belt, garter straps:1.2)", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 170, "name": "Thong", "description": "", "value": "thong", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 171, "name": "Yoga pants", "description": "", "value": "yoga pants", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 172, "name": "Cooking", "description": "", "value": "cooking", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 173, "name": "Eating", "description": "", "value": "eating", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 174, "name": "Jumping", "description": "", "value": "jumping", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 175, "name": "Sleeping", "description": "", "value": "sleeping", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 176, "name": "Yoga", "description": "", "value": "yoga", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 177, "name": "Squatting", "description": "", "value": "squatting", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 178, "name": "Bathing", "description": "", "value": "bathing", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 179, "name": "Standing", "description": "", "value": "standing", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 180, "name": "Spread legs", "description": "", "value": "spread legs", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 181, "name": "Bending over", "description": "", "value": "bending over", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 182, "name": "On Back", "description": "", "value": "on back", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 183, "name": "Massage", "description": "", "value": "massage", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 184, "name": "Hand on own chest", "description": "", "value": "(hand on own chest:1.2)", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 185, "name": "Hand on own head", "description": "", "value": "(hand on own head:1.2)", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 186, "name": "Crossed arm", "description": "", "value": "crossed arm", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 187, "name": "Small breasts", "description": "", "value": "small breasts", "group": "", "index": 0, "premium": 0, "category_id": 45}, {"id": 188, "name": "Huge breasts", "description": "", "value": "huge breasts", "group": "", "index": 0, "premium": 0, "category_id": 45}, {"id": 189, "name": "Small ass", "description": "", "value": "medium ass", "group": "", "index": 0, "premium": 0, "category_id": 46}, {"id": 190, "name": "Huge ass", "description": "", "value": "huge ass", "group": "", "index": 0, "premium": 0, "category_id": 46}, {"id": 191, "name": "Perfect body", "description": "", "value": "perfect body", "group": "", "index": 0, "premium": 0, "category_id": 47}, {"id": 192, "name": "Fat body", "description": "", "value": "fat", "group": "", "index": 0, "premium": 0, "category_id": 47}, {"id": 193, "name": "Muscular body", "description": "", "value": "muscular", "group": "", "index": 0, "premium": 0, "category_id": 47}, {"id": 194, "name": "small areolas", "description": "", "value": "medium areolas", "group": "", "index": 0, "premium": 0, "category_id": 48}, {"id": 195, "name": "Large areolas", "description": "", "value": "large areolas", "group": "", "index": 0, "premium": 0, "category_id": 48}, {"id": 196, "name": "tan", "description": "", "value": "(tan:1.2)", "group": "", "index": 0, "premium": 0, "category_id": 49}, {"id": 197, "name": "wet body", "description": "", "value": "(wet:1.1)", "group": "", "index": 0, "premium": 0, "category_id": 50}, {"id": 198, "name": "Abs", "description": "", "value": "abs", "group": "", "index": 0, "premium": 0, "category_id": 51}, {"id": 199, "name": "Pregnant", "description": "", "value": "pregnant", "group": "", "index": 0, "premium": 0, "category_id": 51}, {"id": 200, "name": "Daytime", "description": "", "value": "daytime", "group": "", "index": 0, "premium": 0, "category_id": 52}, {"id": 201, "name": "Night", "description": "", "value": "night", "group": "", "index": 0, "premium": 0, "category_id": 52}, {"id": 202, "name": "Sun", "description": "", "value": "sun", "group": "", "index": 0, "premium": 0, "category_id": 53}, {"id": 203, "name": "Moon", "description": "", "value": "moon", "group": "", "index": 0, "premium": 0, "category_id": 53}, {"id": 204, "name": "Bedroom", "description": "", "value": "bedroom", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 205, "name": "Reception", "description": "", "value": "reception", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 206, "name": "Bathroom", "description": "", "value": "bathroom", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 207, "name": "Fireplace", "description": "", "value": "fireplace", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 208, "name": "Forest", "description": "", "value": "forest", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 209, "name": "Desert", "description": "", "value": "desert", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 210, "name": "Car", "description": "", "value": "car", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 211, "name": "Sea", "description": "", "value": "sea", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 212, "name": "Beach", "description": "", "value": "beach", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 213, "name": "Office", "description": "", "value": "office", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 214, "name": "Stage", "description": "", "value": "stage", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 215, "name": "Changing room", "description": "", "value": "changing room", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 216, "name": "Swimming pool", "description": "", "value": "swimming pool", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 217, "name": "Street", "description": "", "value": "street", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 218, "name": "City", "description": "", "value": "(city:1.2), street", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 219, "name": "Jungle", "description": "", "value": "jungle", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 220, "name": "Mountain", "description": "", "value": "mountain", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 221, "name": "On boat", "description": "", "value": "on boat", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 222, "name": "On bed", "description": "", "value": "on bed", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 223, "name": "Oasis", "description": "", "value": "oasis", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 224, "name": "Snow", "description": "", "value": "snow", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 225, "name": "Tent", "description": "", "value": "tent", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 226, "name": "Church", "description": "", "value": "church", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 227, "name": "Kitchen", "description": "", "value": "kitchen", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 228, "name": "Casino", "description": "", "value": "casino", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 229, "name": "Gym", "description": "", "value": "gym", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 230, "name": "Hotel room", "description": "", "value": "hotel room", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 231, "name": "Wedding", "description": "", "value": "wedding", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 232, "name": "Garden", "description": "", "value": "garden", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 233, "name": "Cave", "description": "", "value": "cave", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 234, "name": "Sauna", "description": "", "value": "sauna", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 235, "name": "Lake", "description": "", "value": "lake", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 236, "name": "In bath tub", "description": "", "value": "(in bath tub), water", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 237, "name": "ruin", "description": "", "value": "ruin", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 238, "name": "outdoors", "description": "", "value": "outdoors", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 239, "name": "Rim light", "description": "", "value": "(rim light:1.5)", "group": "", "index": 0, "premium": 0, "category_id": 55}, {"id": 240, "name": "Diffuse light", "description": "", "value": "diffuse Lighting", "group": "", "index": 0, "premium": 0, "category_id": 55}, {"id": 241, "name": "Front view", "description": "", "value": "front view", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 244, "name": "Close-up view", "description": "", "value": "portrait", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 245, "name": "Full body", "description": "", "value": "full body", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 246, "name": "From above", "description": "", "value": "from above", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 247, "name": "From below", "description": "", "value": "from below", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 248, "name": "From behind", "description": "", "value": "from behind", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 249, "name": "From side", "description": "", "value": "from side", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 250, "name": "Chinese-1", "description": "", "value": "<lora:Chinese:0.45>", "group": "race", "index": 0, "premium": 0, "category_id": 57}, {"id": 251, "name": "Chinese-2", "description": "", "value": "<lora:Chinese3:0.6>", "group": "race", "index": 0, "premium": 0, "category_id": 57}, {"id": 252, "name": "Chinese-3", "description": "", "value": "<lora:zh_tw_1:0.5>", "group": "race", "index": 0, "premium": 0, "category_id": 57}, {"id": 253, "name": "Chinese-4", "description": "", "value": "<lora:chinese_4:0.5>", "group": "race", "index": 0, "premium": 0, "category_id": 57}, {"id": 254, "name": "Korean-1", "description": "", "value": "<lora:Korean:0.45>,korean,kpop idol", "group": "race", "index": 0, "premium": 0, "category_id": 58}, {"id": 255, "name": "Korean-2", "description": "", "value": "<lora:Korean5e-51e-4:0.5>,korean,kpop idol", "group": "race", "index": 0, "premium": 0, "category_id": 58}, {"id": 256, "name": "Korean-3", "description": "", "value": "<lora:korean_n1:0.5>,korean", "group": "race", "index": 0, "premium": 0, "category_id": 58}, {"id": 257, "name": "Korean-4", "description": "", "value": "<lora:korean_n2:0.5>,korean", "group": "race", "index": 0, "premium": 0, "category_id": 58}, {"id": 258, "name": "Korean-5", "description": "", "value": "<lora:korean_4:0.5>,korean", "group": "race", "index": 0, "premium": 0, "category_id": 58}, {"id": 259, "name": "Japanese-1", "description": "", "value": "<lora:Japanese:0.35>, japanese", "group": "race", "index": 0, "premium": 0, "category_id": 59}, {"id": 260, "name": "Japanese-2", "description": "", "value": "<lora:Japanese2:0.45>, japanese", "group": "race", "index": 0, "premium": 0, "category_id": 59}, {"id": 261, "name": "Japanese-3", "description": "", "value": "<lora:Japanese5e-41e-4:0.4>, japanese", "group": "race", "index": 0, "premium": 0, "category_id": 59}, {"id": 262, "name": "Japanese-4", "description": "", "value": "<lora:japanese_m1:0.5>, japanese", "group": "race", "index": 0, "premium": 0, "category_id": 59}, {"id": 263, "name": "White People-1", "description": "", "value": "<lora:White_v4:0.3>,white people", "group": "race", "index": 0, "premium": 0, "category_id": 60}, {"id": 264, "name": "White People-2", "description": "", "value": "<lora:White2:0.4>,white people", "group": "race", "index": 0, "premium": 0, "category_id": 60}, {"id": 265, "name": "White People-3", "description": "", "value": "<lora:White3:0.4>,white people", "group": "race", "index": 0, "premium": 0, "category_id": 60}, {"id": 266, "name": "White People-4", "description": "", "value": "<lora:White4:0.4>,white people", "group": "race", "index": 0, "premium": 0, "category_id": 60}, {"id": 267, "name": "White People-5", "description": "", "value": "<lora:White5:0.5>, white people", "group": "race", "index": 0, "premium": 0, "category_id": 60}, {"id": 268, "name": "Arab-1", "description": "", "value": "<lora:Arabs_1:0.5>, Arabs", "group": "race", "index": 0, "premium": 0, "category_id": 61}, {"id": 269, "name": "Arab-2", "description": "", "value": "<lora:Arabs_2:0.5>, Arabs", "group": "race", "index": 0, "premium": 0, "category_id": 61}, {"id": 270, "name": "Black People", "description": "", "value": "black people, <lora:Black:0.2>", "group": "race", "index": 0, "premium": 0, "category_id": 17}, {"id": 271, "name": "Hong Kong", "description": "", "value": "hkgirl, (kpop idol), <lora:HongKong:0.5>", "group": "race", "index": 0, "premium": 0, "category_id": 17}, {"id": 272, "name": "Indian", "description": "", "value": "<lora:Indian:0.45>, Indian, brown skin, facial mark", "group": "race", "index": 0, "premium": 0, "category_id": 17}, {"id": 273, "name": "Latino", "description": "", "value": "<lora:latino:0.45>, latino", "group": "race", "index": 0, "premium": 0, "category_id": 17}, {"id": 375, "name": "Selfie1", "description": "", "value": "upper body, selfie, holding phone, phone, cellphone, looking at viewer", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 376, "name": "Grin", "description": "", "value": "grin", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 377, "name": "Subway", "description": "", "value": "subway", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 382, "name": "Selfie2", "description": "", "value": "(upper body, selfie:1.2), looking at viewer", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 388, "name": "french braid", "description": "", "value": "french braid", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 389, "name": "spiralcurl", "description": "", "value": "spiralcurl", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 390, "name": "curly hair", "description": "", "value": "curly hair", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 391, "name": "hair behind ear", "description": "", "value": "hair behind ear", "group": "", "index": 0, "premium": 0, "category_id": 77}, {"id": 392, "name": "frizzy hair", "description": "", "value": "frizzy hair", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 393, "name": "bun head", "description": "", "value": "bun head", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 401, "name": "cat ears", "description": "", "value": "cat ears", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 402, "name": "rabbit ears", "description": "", "value": "rabbit ears", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 403, "name": "updo", "description": "", "value": "updo", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 404, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.5>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 405, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.6>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 406, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.4>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 407, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.4>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 408, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.5>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 409, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.4>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 410, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 411, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.2>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 412, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.3>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 413, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.5>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 414, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.6>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 415, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.7>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 416, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.8>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 417, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.9>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 418, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 419, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.85>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 420, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.05>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 421, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.05>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 422, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.05>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 423, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.55>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 424, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.7>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 425, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.85>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 433, "name": "cat ears headband", "description": "", "value": "(cat ears headband, fake animal ears)", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 434, "name": "rabbit ears headband", "description": "", "value": "(cat ears headband, fake animal ears)", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 435, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.15>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 436, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.2>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 437, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.2>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 438, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.15>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 439, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 440, "name": "None", "description": "", "value": "", "group": "race", "index": 0, "premium": 0, "category_id": 17}, {"id": 441, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.3>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 450, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 451, "name": "Upper body", "description": "", "value": "Upper body", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 452, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.8>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 453, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 454, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.75>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 455, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.85>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 456, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.9>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 457, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.35>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 458, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:1>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 459, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.25>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 460, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.25>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 461, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.45>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 462, "name": "Japanese-5", "description": "", "value": "<lora:Japanese5:0.6>, japanese", "group": "race", "index": 0, "premium": 0, "category_id": 59}, {"id": 469, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.7>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 470, "name": "World of Warcraft - Elf", "description": "", "value": "<lora:elf:0.35>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 471, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.65>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 472, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.75>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 473, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.35>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 474, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.3>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 475, "name": "League of Legends - Ahri", "description": "", "value": "<lora:kda_ahri:0.65>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 499, "name": "Blue bra", "description": "", "value": "Blue bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 500, "name": "Blue dress", "description": "", "value": "Blue dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 501, "name": "Blue panties", "description": "", "value": "Blue panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 508, "name": "black pants", "description": "", "value": "black pants, belt", "group": "", "index": 0, "premium": 0, "category_id": 98}, {"id": 510, "name": "Red dress", "description": "", "value": "Red dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 511, "name": "Green dress", "description": "", "value": "Green dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 512, "name": "Purple dress", "description": "", "value": "Purple dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 513, "name": "Yellow dress", "description": "", "value": "Yellow dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 514, "name": "White dress", "description": "", "value": "White dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 515, "name": "Black dress", "description": "", "value": "Black dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 516, "name": "Pink dress", "description": "", "value": "Pink dress", "group": "Set", "index": 0, "premium": 0, "category_id": 99}, {"id": 517, "name": "Red bra", "description": "", "value": "Red bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 518, "name": "Green bra", "description": "", "value": "Green bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 519, "name": "Purple bra", "description": "", "value": "Purple bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 521, "name": "Yellow bra", "description": "", "value": "Yellow bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 522, "name": "White bra", "description": "", "value": "White bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 523, "name": "Black bra", "description": "", "value": "Black bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 524, "name": "Pink bra", "description": "", "value": "Pink bra", "group": "Upper", "index": 0, "premium": 0, "category_id": 101}, {"id": 526, "name": "Red panties", "description": "", "value": "Red panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 527, "name": "Green panties", "description": "", "value": "Green panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 528, "name": "Purple panties", "description": "", "value": "Purple panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 529, "name": "Yellow panties", "description": "", "value": "Yellow panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 530, "name": "White panties", "description": "", "value": "White panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 531, "name": "Black panties", "description": "", "value": "Black panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 532, "name": "Pink panties", "description": "", "value": "Pink panties", "group": "lower", "index": 0, "premium": 0, "category_id": 100}, {"id": 533, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.25>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 535, "name": "None", "description": "", "value": "", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 537, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 30}, {"id": 538, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 31}, {"id": 539, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 32}, {"id": 540, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 33}, {"id": 541, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 34}, {"id": 542, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 35}, {"id": 543, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 36}, {"id": 544, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 37}, {"id": 545, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 38}, {"id": 546, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 39}, {"id": 547, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 40}, {"id": 548, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 77}, {"id": 549, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 79}, {"id": 550, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 28}, {"id": 551, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 29}, {"id": 553, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 50}, {"id": 554, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 51}, {"id": 555, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 44}, {"id": 556, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 55}, {"id": 557, "name": "World of Warcraft - Sally Whitemane", "description": "", "value": "<lora:whitemane:0.45>", "group": "", "index": 0, "premium": 0, "category_id": null}, {"id": 558, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 45}, {"id": 559, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 46}, {"id": 560, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 47}, {"id": 561, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 48}, {"id": 562, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 53}, {"id": 563, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 52}, {"id": 565, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 84}, {"id": 566, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 85}, {"id": 567, "name": "Looking at viewer", "description": "", "value": "Looking at viewer", "group": "", "index": 0, "premium": 0, "category_id": 102}, {"id": 568, "name": "Looking back", "description": "", "value": "Looking back", "group": "", "index": 0, "premium": 0, "category_id": 102}, {"id": 569, "name": "Looking at another", "description": "", "value": "Looking at another", "group": "", "index": 0, "premium": 0, "category_id": 102}, {"id": 570, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 102}, {"id": 571, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 23}, {"id": 572, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 16}, {"id": 573, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 24}, {"id": 574, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 25}, {"id": 575, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 26}, {"id": 576, "name": "None", "description": "", "value": "", "group": "", "index": 0, "premium": 0, "category_id": 27}, {"id": 578, "name": "sexy dress", "description": "", "value": "sheath dress", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 579, "name": "fishnet clothing", "description": "", "value": "fishnet clothing", "group": "Set", "index": 0, "premium": 0, "category_id": 41}, {"id": 580, "name": "Red shirt", "description": "", "value": "red shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 581, "name": "Green shirt", "description": "", "value": "green shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 582, "name": "Purple shirt", "description": "", "value": "purple shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 583, "name": "Yellow shirt", "description": "", "value": "yellow shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 584, "name": "White shirt", "description": "", "value": "white shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 585, "name": "Black shirt", "description": "", "value": "black shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 586, "name": "Pink shirt", "description": "", "value": "pink shirt", "group": "Upper", "index": 0, "premium": 0, "category_id": 104}, {"id": 587, "name": "Red jacket", "description": "", "value": "red jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 588, "name": "Green jacket", "description": "", "value": "green jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 589, "name": "Purple jacket", "description": "", "value": "purple jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 590, "name": "Yellow jacket", "description": "", "value": "yellow jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 591, "name": "White jacket", "description": "", "value": "white jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 592, "name": "Black jacket", "description": "", "value": "black jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 593, "name": "Pink jacket", "description": "", "value": "pink jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 103}, {"id": 594, "name": "Red sweater", "description": "", "value": "", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 595, "name": "Green sweater", "description": "", "value": "Green sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 596, "name": "Purple sweater", "description": "", "value": "Purple sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 597, "name": "Yellow sweater", "description": "", "value": "Yellow sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 598, "name": "White sweater", "description": "", "value": "White sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 599, "name": "Black sweater", "description": "", "value": "Black sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 600, "name": "Pink sweater", "description": "", "value": "Pink sweater", "group": "Upper", "index": 0, "premium": 0, "category_id": 105}, {"id": 601, "name": "Red coat", "description": "", "value": "Red coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 602, "name": "Green coat", "description": "", "value": "Green coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 603, "name": "Purple coat", "description": "", "value": "Purple coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 604, "name": "Yellow coat", "description": "", "value": "Yellow coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 605, "name": "White coat", "description": "", "value": "White coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 606, "name": "Black coat", "description": "", "value": "Black coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 607, "name": "Pink coat", "description": "", "value": "Pink coat", "group": "Upper", "index": 0, "premium": 0, "category_id": 106}, {"id": 612, "name": "Red long skirt", "description": "", "value": "Red long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 613, "name": "Green long skirt", "description": "", "value": "Green long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 614, "name": "Purple long skirt", "description": "", "value": "Purple long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 615, "name": "Yellow long skirt", "description": "", "value": "Yellow long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 616, "name": "White long skirt", "description": "", "value": "White long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 617, "name": "Black long skirt", "description": "", "value": "Black long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 618, "name": "Pink long skirt", "description": "", "value": "Pink long skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 109}, {"id": 619, "name": "Red mini skirt", "description": "", "value": "Red mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 620, "name": "Green mini skirt", "description": "", "value": "Green mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 621, "name": "Purple mini skirt", "description": "", "value": "Purple mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 622, "name": "Yellow mini skirt", "description": "", "value": "Yellow mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 623, "name": "White mini skirt", "description": "", "value": "White mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 624, "name": "Black mini skirt", "description": "", "value": "Black mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 625, "name": "Pink mini skirt", "description": "", "value": "Pink mini skirt", "group": "lower", "index": 0, "premium": 0, "category_id": 108}, {"id": 626, "name": "public plaza", "description": "", "value": "public plaza", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 627, "name": "Jeans", "description": "", "value": "jeans", "group": "lower", "index": 0, "premium": 0, "category_id": 43}, {"id": 628, "name": "Denim jacket", "description": "", "value": "denim jacket", "group": "Upper", "index": 0, "premium": 0, "category_id": 42}, {"id": 629, "name": "Tattoo", "description": "", "value": "tattoo", "group": "", "index": 0, "premium": 0, "category_id": 49}, {"id": 630, "name": "Cliff", "description": "", "value": "cliff", "group": "", "index": 0, "premium": 0, "category_id": 54}, {"id": 534, "name": "None", "description": "", "value": "", "group": "Upper", "index": 1, "premium": 0, "category_id": 42}, {"id": 536, "name": "None", "description": "", "value": "", "group": "Set", "index": 1, "premium": 0, "category_id": 41}, {"id": 552, "name": "None", "description": "", "value": "", "group": "", "index": 1, "premium": 0, "category_id": 49}, {"id": 564, "name": "None", "description": "", "value": "", "group": "", "index": 1, "premium": 0, "category_id": 54}]')
+    add_categories();
+    add_tags();
+
+</script>
+</div>
+</div>
+<div class="col-xl-3" id="workbench_viewer">
+
+<div class="mb-2">
+<div class="col-12">
+<a id="viewer-link" href="https://pornmake.ai" style="position: relative; display: inline-block;">
+<img class="workbench_picture">
+<div id="maker_watermark">https://PornMake.Ai</div>
+<style>
+                            #maker_watermark {
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                                font-size: 18px;
+                                font-family: Arial,serif;
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        </style>
+</a>
+</div>
+</div>
+<div class="mb-2">
+<div class="col-12">
+<bold class="text-warning" style="font-weight: bold">Choose tags and press "Make"</bold>
+</div>
+</div>
+<div class="mb-2" style="text-align: left">
+<i class="far fa-heart" onclick="addFavorite($(this), )"> Add to Favorites</i>
+</div>
+<div id="maker_status_text"></div>
+<div class="mb-2">
+<textarea class="form-control" id="maker_tags_list" disabled></textarea>
+</div>
+<div class="mb-2" id="maker_spinner" style="display:none">
+<div>
+<div class="spinner-border text-warning" role="status">
+<span class="visually-hidden">Loading...</span>
+</div>
+<span id="maker_progress_text"></span>
+</div>
+</div>
+<div class="mb-2">
+<button type="button" id="maker_make_btn" class="btn btn-warning col-12">Make! <i class="fas fa-magic"></i></button>
+<button type="button" id="maker_stop_btn" style="display:none" class="btn btn-warning col-12">Stop!
+</button>
+</div>
+<div class="mb-2">
+<button type="button" id="maker_edit_btn" class="btn btn-danger col-12" disabled>Edit Porn
+<i class="far fa-edit"></i></button>
+</div>
+<div class="mb-2">
+<button type="button" id="maker_clear_tag_btn" class="btn btn-secondary col-12">Clear Tags
+<i class="far fa-trash-alt"></i></button>
+</div>
+<div class="mb-2">
+<button class="btn btn-primary col-12" type="button" data-bs-toggle="collapse" data-bs-target="#maker_share_collapse" aria-expanded="false" aria-controls="maker_share_collapse">
+Share <i class="fas fa-share-square"></i>
+</button>
+<div class="collapse" id="maker_share_collapse">
+<div class="card">
+<button id="maker_share_reddit_btn" type="button" class="btn btn-danger" style="background-color: #ff4500;" data-sharer="reddit" data-title="I just drew a picture with AI.Check it out!" data-url="https://pornmake.ai">Share on Reddit <i class="fab fa-reddit-alien"></i>
+</button>
+<button id="maker_share_twitter_btn" type="button" class="btn btn-primary" style="background-color: #26a7de" data-sharer="twitter" data-title="I just drew a picture with AI.Check it out!" data-url="https://pornmake.ai">Share on Twitter <i class="fab fa-twitter"></i></button>
+<button type="button" id="maker_download_btn" class="btn btn-success">
+Download <i class="fas fa-download"></i></button>
+<button type="button" id="maker_share_link_btn" class="btn btn-secondary">Copy Url <i class="fas fa-link"></i></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    var promptsList = [];
+    var prompts = "";
+    var job_id = "";
+    var current_url = "";
+    var stop = false
+
+    var waitHint = 'Waiting in Queue, might take up to 5 mins. Tired of waiting? <a target="_blank" rel="noopener noreferrer" href="https://www.patreon.com/PornmakeAI/membership">Try Premium</a>'
+    var processHint = 'Now processing...It should take 10 secs.'
+
+    const editorDownloadBtn = document.querySelector('#editor_download_btn');
+    const makerDownloadBtn = document.querySelector('#maker_download_btn');
+    const picture = document.querySelector('.workbench_picture');
+
+    var myCanvas = document.getElementById('myCanvas');
+    var canvas_bg = document.getElementById('canvas_bg');
+    const canvas = new fabric.Canvas(myCanvas)
+    var g_action = ''
+
+
+    canvas.isDrawingMode = true
+    canvas.freeDrawingBrush.width = 30
+
+
+    $('#editor_go_back_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'go to make porn'
+        });
+        $('#workbench_viewer').css('display', '');
+        $('#porn_editor').css('display', 'none');
+        $('#left').attr('class', 'col-xl-9');
+    })
+
+    $('#maker_edit_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'go to edit porn'
+        });
+        $('#workbench_viewer').css('display', 'none');
+        $('#porn_editor').css('display', '');
+        $('#left').attr('class', 'col-xl-12');
+        window.scrollTo(0, 0);
+        resize()
+    })
+
+    //const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    $("#maker_share_reddit_btn").on("click", function () {
+        const data_url = $('#maker_share_reddit_btn').attr('data-url')
+        $('#maker_share_reddit_btn').attr('data-url', data_url.split('webp').join('jpg')) //批量替换成jpg
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'share on reddit'
+        });
+    })
+
+    $("#editor_share_reddit_btn").on("click", function () {
+        const data_url = $('#editor_share_reddit_btn').attr('data-url')
+        $('#editor_share_reddit_btn').attr('data-url', data_url.split('webp').join('jpg')) //批量替换成jpg
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'share on reddit'
+        });
+    })
+
+    $("#maker_share_twitter_btn").on("click", function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'share on twitter'
+        });
+    })
+
+    $("#maker_share_link_btn").on("click", function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'share link'
+        });
+        if ($("#viewer-link").attr("href") != "#") {
+            navigator.clipboard.writeText($("#viewer-link").attr("href"));
+            show_status("Url is already copied to clipboard.", "warning")
+        }
+    })
+
+    $("#editor_share_link_btn").on("click", function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'share link'
+        });
+        if ($("#viewer-link").attr("href") != "#") {
+            navigator.clipboard.writeText($("#viewer-link").attr("href"));
+            show_status("Url is already copied to clipboard.", "warning")
+        }
+    })
+
+
+    $("#nav-tabContent").on('input', function () {
+        promptsList = []; // 清空
+        const radios = document.querySelectorAll('input[type="radio"]:checked');
+
+        radios.forEach((radio) => {
+            var radio_val = radio.value
+            if (radio_val) {
+                promptsList.push(radio_val);
+            }
+        });
+
+        $("input[type='checkbox']:checked").each(function () {
+            promptsList.push($(this).val());
+        });
+
+        
+
+
+        prompts = promptsList.join(",");
+
+        $("#maker_tags_list").text(prompts);
+        $("#editor_tags_list").text(prompts);
+    });
+
+let nameAttrs = [];
+$(".btn-group input[type='radio']").each(function() {
+    let name = $(this).attr('name');
+    if (!nameAttrs.includes(name)) {
+        nameAttrs.push(name);
+    }
+});
+
+// Monitor changes on .btn-group child elements
+$(".btn-group").on('input', function () {
+    resetButtonGroup();
+    const $selected_element = $(this).find('input[type="radio"]:checked');
+    if ($selected_element.val() !== "") {
+        const selected_text = $selected_element.siblings('label').text();
+        const $parent_element = $selected_element.parent().parent().siblings('button');
+        $parent_element.text(selected_text);
+        $parent_element.css("background-color", "#f8f9fa");
+        $parent_element.css("color", "#000");
+    }
+});
+
+// Monitor changes on elements with the same name outside .btn-group
+$.each(nameAttrs, function(index, name) {
+    $(`input[type="radio"][name="${name}"]:not(.btn-group *)`).on('input', function () {
+        resetButtonGroup();
+    });
+});
+
+// Function to reset .btn-group to default state
+function resetButtonGroup() {
+    const $button_elements = $(".btn-group button");
+    $button_elements.each(function () {
+        $(this).text($(this).attr("aria-text"));
+    });
+    $button_elements.css("background-color", "");
+    $button_elements.css("color", "");
+}
+
+    show_status = function (msg, msg_type) {
+        if (msg === '') {
+            $("#maker_status_text").css('display', 'none');
+            $("#editor_status_text").css('display', 'none');
+            $('#maker_transform_progress_text').css('display', 'none')
+        } else {
+            $("#maker_status_text").css('display', 'block');
+            $("#editor_status_text").css('display', 'block');
+            $('#maker_transform_progress_text').css('display', 'block')
+            var t = ""
+            if (msg_type === "warning") {
+                t = [
+                    `<div class="alert alert-warning alert-dismissible" role="alert">`,
+                    `   <div>` + msg + `</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+            } else if (msg_type === "success") {
+                t = [
+                    `<div class="alert alert-success alert-dismissible" role="alert">`,
+                    `   <div>` + msg + `</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+            }
+            $("#maker_status_text").html(t)
+            $("#editor_status_text").html(t)
+            $('#maker_transform_progress_text').html(t)
+        }
+    }
+
+    make_pending = function () {
+        stop = false
+        $("#editor_spinner").css("display", "block");
+        $("#maker_spinner").css("display", "block");
+        $('#maker_transform_spinner').css("display", "block");
+        //$('#maker_make_btn').attr('disabled', true);
+        //$('#editor_make_new_porn_btn').attr('disabled', true);
+        $('#maker_transform_btn').attr('disabled', true);
+        $('#maker_make_btn').css('display', 'none');
+        $('#maker_stop_btn').css('display', 'block');
+        $('#editor_make_new_porn_btn').css('display', 'none');
+        $('#editor_stop_btn').css('display', 'block');
+
+        $("#maker_upscale_btn").attr('disabled', true)
+        $("#editor_upscale_btn").attr('disabled', true)
+    }
+
+    make_ready = function () {
+        stop = true
+        $('#editor_progress_text').text("");
+        $('#maker_progress_text').text("");
+        $('#maker_transform_progress_text').text("");
+        $("#editor_spinner").css("display", "none");
+        $("#maker_spinner").css("display", "none");
+        $('#maker_transform_spinner').css("display", "none");
+        $('#maker_transform_btn').attr('disabled', false);
+        //$('#maker_make_btn').attr('disabled', false);
+        //$('#editor_make_new_porn_btn').attr('disabled', false);
+
+        $('#maker_make_btn').css('display', 'block');
+        $('#maker_stop_btn').css('display', 'none');
+        $('#editor_make_new_porn_btn').css('display', 'block');
+        $('#editor_stop_btn').css('display', 'none');
+
+        $("#maker_upscale_btn").attr('disabled', false)
+        $("#editor_upscale_btn").attr('disabled', false)
+    }
+
+    $("#editor_progress_text").on("click", function (e) {
+        e.stopImmediatePropagation();
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'try premium'
+        });
+    })
+
+    $("#maker_progress_text").on("click", function (e) {
+        e.stopImmediatePropagation();
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'try premium'
+        });
+    })
+
+get_progress = function () {
+    if (stop) {
+        return
+    }
+    $.get("../pic/get_progress", "job_id=" + job_id, function (data, textStatus, jqXHR) {
+        if (data.status == 1) {
+            if (!data.url && !data.result) {
+                if (data.rank == -1) {
+                    $('#editor_progress_text').text(processHint)
+                    $('#maker_progress_text').text(processHint);
+                } else {
+                    
+                    $('#editor_progress_text').html(waitHint)
+                    $('#maker_progress_text').html(waitHint); // + " (" + data.rank + ")"
+                }
+                setTimeout(get_progress, 1500);
+            }
+            else{
+                make_ready()
+                if ('url' in data) {
+                    setUrl(data.url);
+                    canvas.clear();
+                    add_history(data.url)
+                    $(".fas.fa-heart").attr("class", "far fa-heart"); // 清空 favorites
+                    show_status('Image is ready. Please Share if you like it. It would be a great help and support for us.', "warning")
+                }
+                
+
+            }
+        } else {
+            make_ready()
+            setUrl();
+            alert(data.msg);
+        }
+        }
+        )
+    }
+
+
+    add_history = function (url) {
+        $("#history_pictures").append(`<img src="${url}" onclick="setUrl(this.src);" style="width:75px; border: 1px solid white;">`);
+    }
+
+    $('#editor_clear_tags_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'clear tags'
+        });
+
+        promptsList = []
+        prompts = ''
+        const radios_eles = document.querySelectorAll('input[type="radio"]');
+
+        radios_eles.forEach(($radio) => {
+            try {
+                $radio.checked = false;
+            } catch (error) {
+
+            }
+
+        })
+
+        $("#maker_tags_list").text(prompts);
+        $("#editor_tags_list").text(prompts);
+    })
+
+
+
+    
+
+    $('#editor_make_new_porn_btn').on('click', function () {
+        g_action = 'edit'
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'make new porn'
+        });
+
+        if (prompts == "") {
+            alert('Please choose some tags');
+            return;
+        }
+        if (originalCanvasHeight > 1024 || originalCanvasWidth > 1024) {
+            alert('An upscaled image cannot be further upscaled.');
+            return;
+        }
+
+        make_pending()
+        const form_data = new FormData();
+        form_data.append('csrfmiddlewaretoken', $("input[name='csrfmiddlewaretoken']").val())
+        form_data.append('prompt', prompts);
+
+        
+            form_data.append('action', 'edit');
+        
+        form_data.append('mask_data', getMaskBase64Image());
+        const backgroundImage = getComputedStyle(canvas_bg).backgroundImage.replace(/^url\(['"]?([^'"]+)['"]?\)$/, '$1');
+        if (backgroundImage.indexOf('cdn.pornmake.ai') >= 0) {
+            toDataURL(backgroundImage, function (base64Img) {
+                if (base64Img.length > 0) {
+                    form_data.append('img_data', base64Img);
+
+                    $.ajax({
+                        url: "../pic/make",
+                        type: "POST",
+                        data: form_data,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            if (data.status == 1) {
+                                job_id = data.job_id
+                                get_progress();
+                            } else {
+                                make_ready()
+                                alert(data.msg);
+                            }
+                            //$("#canvas_bg").css("background-image", "url(data:image/png;base64," + data.images[0] + ")")
+                            //canvas.clear();
+                        }
+                    }).fail(function () {
+                        make_ready()
+                    })
+                }
+            })
+        } else {
+            form_data.append('img_data', backgroundImage);
+            $.ajax({
+                url: "../pic/make",
+                type: "POST",
+                data: form_data,
+                processData: false,
+                contentType: false,
+                success: function (data) {
+                    if (data.status == 1) {
+                        job_id = data.job_id
+                        get_progress();
+                    } else {
+                        make_ready()
+                        alert(data.msg);
+                    }
+                    //$("#canvas_bg").css("background-image", "url(data:image/png;base64," + data.images[0] + ")")
+                    //canvas.clear();
+                }
+            }).fail(function () {
+                make_ready()
+            })
+        }
+    })
+
+    $('#maker_stop_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'stop make'
+        });
+        $.get("../pic/job/remove", "job_id=" + job_id, function (data, textStatus, jqXHR) {
+            if (data.status == 1) {
+                make_ready();
+            } else {
+                show_status("Job cannot be stopped. Please wait.", "warning");
+            }
+        })
+
+    })
+
+    $('#editor_stop_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'stop make new porn'
+        });
+        $.get("../pic/job/remove", "job_id=" + job_id, function (data, textStatus, jqXHR) {
+            if (data.status == 1) {
+                make_ready();
+            } else {
+                show_status("Job cannot be stopped. Please wait.", "warning");
+            }
+        })
+    })
+
+    $('#maker_make_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'make'
+        });
+
+        if (prompts === "") {
+            alert('Please choose some tags');
+            return;
+        }
+
+        make_pending()
+        const form_data = new FormData();
+        form_data.append('prompt', prompts)
+        form_data.append('csrfmiddlewaretoken', $("input[name='csrfmiddlewaretoken']").val())
+        form_data.append('action', 'make');
+
+        
+
+        $.ajax({
+            url: "../pic/make",
+            type: 'POST',
+            data: form_data,
+            processData: false,
+            contentType: false,
+            success: function (data, textStatus, jqXHR) {
+                if (data.status == 1) {
+                    job_id = data.job_id
+                    get_progress();
+                } else {
+                    make_ready()
+                    alert(data.msg);
+                }
+            },
+            fail: function () {
+                //show_status(data.msg);
+                make_ready()
+                alert('Unknown error. please try again later.');
+            }
+        })
+    })
+    ;
+
+    $('#maker_clear_tag_btn').on('click', function () {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'btn': 'clear tags'
+        });
+
+        promptsList = []
+        prompts = ''
+        const radios_eles = document.querySelectorAll('input[type="radio"]');
+
+        radios_eles.forEach(($radio) => {
+            try {
+                $radio.checked = false;
+            } catch (error) {
+
+            }
+
+        })
+
+        $("#maker_tags_list").text(prompts);
+        $("#editor_tags_list").text(prompts);
+    })
+
+
+    editorDownloadBtn.addEventListener('click', async () => {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'download'
+        });
+        try {
+            const watermarkedBlob = await addWatermark(picture.src);
+            const webpURL = URL.createObjectURL(watermarkedBlob);
+            const jpgBlob = await convertWebpToJpg(webpURL);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(jpgBlob);
+            downloadLink.download = 'picture.jpg';
+            downloadLink.click();
+        } catch (error) {
+            console.error(error);
+        }
+    });
+
+    makerDownloadBtn.addEventListener('click', async () => {
+        gtag('event', 'btn_click', {
+            'app_name': 'main',
+            'screen_name': 'workbench',
+            'event_type': 'download'
+        });
+        try {
+            const watermarkedBlob = await addWatermark(picture.src);
+            const webpURL = URL.createObjectURL(watermarkedBlob);
+            const jpgBlob = await convertWebpToJpg(webpURL);
+            // 创建一个 <a> 标签
+            const downloadLink = document.createElement('a');
+            downloadLink.href = URL.createObjectURL(jpgBlob);
+            downloadLink.download = 'picture.jpg';
+            downloadLink.click();
+        } catch (error) {
+            console.error(error);
+        }
+    });
+
+
+    async function addWatermark(imageSrc) {
+        return new Promise((resolve, reject) => {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            const image = new Image();
+            image.crossOrigin = 'anonymous'; // 添加此行
+            image.src = imageSrc;
+
+            image.onload = () => {
+                canvas.width = image.width;
+                canvas.height = image.height;
+                ctx.drawImage(image, 0, 0);
+                
+                    ctx.font = '28px Arial';
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.fillText("https://PornMake.Ai", 10, 10);
+                
+                canvas.toBlob((blob) => {
+                    resolve(blob);
+                }, 'image/webp');
+            };
+
+            image.onerror = (error) => {
+                reject(error);
+            };
+        });
+    }
+
+
+    $('#editor_undo_btn').on('click', function () {
+        canvas.undo()
+    })
+
+    $('#editor_redo_btn').on('click', function () {
+        canvas.redo()
+    })
+
+    $('#brush_width_range').on('change', function () {
+        canvas.freeDrawingBrush.width = Number($('#brush_width_range').val())
+    })
+
+    async function getPic(url, callback) {
+        if (!url) {
+            return
+        }
+        $.get('../pic/get_pic', 'pic_url=' + url, function (data, textStatus, jqXHR) {
+            if (data.status == 1) {
+                callback(data.pic.prompt)
+            } else {
+                callback([])
+            }
+        })
+    }
+
+
+    window.onload = function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const action = urlParams.get('action');
+        //const pic_url = urlParams.get('pic_url');
+        const pic_url = ""
+        const prompt = ""
+        add_history(pic_url)
+        if (action === 'edit') {
+            $('#porn_editor').css('display', '');
+            $('#left').attr('class', 'col-xl-12')
+            $('#workbench_viewer').css('display', 'none');
+            window.scrollTo(0, 0);
+        }
+        if (prompt) {
+            convert_prompt(prompt)
+        } else {
+            // $("#age-18_28-option").click(); // 默認
+            $("input[name=age-option]")[1].click();
+            $("input[name=sex-option]")[0].click();
+        }
+        setUrl(pic_url)
+
+
+        $('#maker_edit_btn').prop('disabled', false);
+
+        if (!mobileCheck()) {
+            $('#editor_drag_btn').css("display", "none")
+        }
+    }
+
+    window.addEventListener('resize', function () {
+        if (!mobileCheck()) {
+            $('#editor_drag_btn').css("display", "none")
+        }
+        resize()
+    })
+
+    window.mobileCheck = function () {
+        let check = false;
+        (function (a) {
+            if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) check = true;
+        })(navigator.userAgent || navigator.vendor || window.opera);
+        return check;
+    };
+
+
+    $("#editor_pen_btn").click(function () {
+        canvas.freeDrawingBrush = new fabric.PencilBrush(canvas);
+        canvas.isDrawingMode = true
+        canvas.freeDrawingBrush.width = Number($('#brush_width_range').val())
+        $('.canvas-container').css('pointer-events', '')
+        $('#upper-canvas').css('pointer-events', '')
+        $('#editor_img').css('pointer-events', '')
+    });
+    $('#eraser_btn').on('click', function () {
+        canvas.freeDrawingBrush = new fabric.EraserBrush(canvas);
+        canvas.isDrawingMode = true;
+        canvas.freeDrawingBrush.width = Number($('#brush_width_range').val())
+        $('.canvas-container').css('pointer-events', '')
+        $('#upper-canvas').css('pointer-events', '')
+        $('#editor_img').css('pointer-events', '')
+    })
+    $('#editor_clear_draw_btn').on('click', function () {
+        canvas.clear();
+    })
+
+    $("#editor_drag_btn").click(function () {
+        canvas.isDrawingMode = false
+
+        $('.canvas-container').css('pointer-events', 'none')
+        $('#upper-canvas').css('pointer-events', 'none')
+        $('#editor_img').css('pointer-events', 'none')
+    });
+
+    canvas.on('mouse:down', function (options) {
+        if (!canvas.isDrawingMode) {
+            lastX = options.e.clientX;
+            lastY = options.e.clientY;
+            lastVpt = canvas.viewportTransform.slice(0);
+        }
+    });
+
+    canvas.on('mouse:move', function (options) {
+        if (!canvas.isDrawingMode) {
+            if (options.e.buttons === 1) {
+                var dx = options.e.clientX - lastX;
+                var dy = options.e.clientY - lastY;
+                canvas.viewportTransform[4] = lastVpt[4] + dx;
+                canvas.viewportTransform[5] = lastVpt[5] + dy;
+                canvas.requestRenderAll();
+            }
+        }
+    });
+
+    canvas.on('mouse:up', function (options) {
+        lastX = null;
+        lastY = null;
+        lastVpt = null;
+    });
+
+
+    convert_prompt = function (prompt) {
+        if (!prompt) {
+            return;
+        }
+        const inputs = document.getElementsByTagName('input');
+        promptsList = [];  // 清空
+
+        for (let i = 0; i < inputs.length; i++) {
+            const input = inputs[i];
+            if ((input.type === 'checkbox' || input.type === 'radio') && input.value) {
+                const values = input.value.split(',');
+                let allMatch = true;
+                for (let j = 0; j < values.length; j++) {
+                    const value = values[j].trim();
+                    const encodedValue = document.createElement('div').appendChild(document.createTextNode(value)).parentNode.innerHTML;
+                    if (!prompt.includes(encodedValue)) {
+                        allMatch = false;
+                        break; // 停止循环，不需要继续匹配
+                    }
+                }
+                if (allMatch) {
+                    input.checked = true;
+                    promptsList.push(input.value);
+                }
+            }
+        }
+
+        if (promptsList.includes("woman")) {
+            // 如果有woman则删除man, 并处理相对应的input
+            const manInput = Array.from(inputs).find(input => input.value === "man");
+            if (manInput) {
+                promptsList = promptsList.filter(prompt => prompt !== "man");
+                manInput.checked = false;
+            }
+            const womanInput = Array.from(inputs).find(input => input.value === "woman");
+            if (womanInput) {
+                womanInput.checked = true;
+            }
+        }
+
+        prompts = promptsList.join(",");
+        $("#maker_tags_list").text(prompts);
+        $("#editor_tags_list").text(prompts);
+    }
+
+    var favorite_map = new Map()
+
+    function setFavorite(pic_url) {
+        // 切换图片的时候， 收藏也跟着切换
+        let isFavorite = favorite_map.get(pic_url);
+        const heartIcons = $('.far.fa-heart, .fas.fa-heart');
+
+        heartIcons.each(function () {
+            if (isFavorite) {
+                $(this).removeClass('far').addClass('fas');
+            } else {
+                $(this).removeClass('fas').addClass('far');
+            }
+        });
+    }
+
+    setUrl = function (pic_url) {
+        let url = "https://pornmake.ai/pic/viewer?pic_url=" + pic_url;
+        if (!pic_url) {
+            pic_url = "https://pornmake.ai";
+            url = "https://pornmake.ai";
+        }
+
+        if (pic_url != url) {
+            setFavorite(pic_url)
+            const $workbenchPicture = $(".workbench_picture");
+            $workbenchPicture.attr("src", pic_url);
+
+            // Create a temporary Image object to get the original dimensions
+            const tempImage = new Image();
+            tempImage.src = pic_url;
+            tempImage.onload = function () {
+                originalCanvasWidth = tempImage.width;
+                originalCanvasHeight = tempImage.height;
+
+                $workbenchPicture.attr("width", originalCanvasWidth);
+                $workbenchPicture.attr("height", originalCanvasHeight);
+                resize()
+
+                // TODO: 添加获取获取是否在favorite中的功能
+                // TODO: 或者将之前加入favorite的记录下来
+            };
+
+            $("#canvas_bg").css('background-image', "url('" + pic_url + "')");
+        }
+        $('#viewer-link').attr("href", url);
+        $("#maker_share_twitter_btn").attr("data-url", url);
+        $("#maker_share_reddit_btn").attr("data-url", pic_url);
+        $("#editor_share_twitter_btn").attr("data-url", url);
+        $("#editor_share_reddit_btn").attr("data-url", pic_url);
+        current_url = url
+    }
+
+    let originalCanvasWidth; // 原圖的寬度
+    let originalCanvasHeight; // 原圖的高度
+
+
+    resize = function () {
+        let container = canvas_container.parentElement; // 获取包含 canvas 的 .col-xl-12 容器元素
+        let containerWidth = container.offsetWidth; // 获取容器宽度
+
+        let g_canvas_scale = containerWidth / originalCanvasWidth; // 根据容器宽度设置缩放比例
+
+        if (g_canvas_scale) {  // 如果g_canvas_scale 為Nan 會出現無法畫畫的錯誤
+            canvas.setZoom(g_canvas_scale);
+            canvas.setDimensions({
+                width: container.offsetWidth,
+                height: originalCanvasHeight * g_canvas_scale
+            });
+            canvas_bg.style.width = container.offsetWidth + 'px';
+            canvas_container.style.width = container.offsetWidth + 'px';
+            canvas_bg.style.height = originalCanvasHeight * g_canvas_scale + 'px';
+            canvas_container.style.height = originalCanvasHeight * g_canvas_scale + 'px';
+        }
+    }
+
+
+    getPoseBase64Image = function () {
+        openpose_editor_canvas.getObjects("image").forEach((img) => {
+            img.set({
+                opacity: 0
+            });
+        })
+        if (openpose_editor_canvas.backgroundImage) openpose_editor_canvas.backgroundImage.opacity = 0
+        openpose_editor_canvas.discardActiveObject();
+        openpose_editor_canvas.renderAll()
+        const base64Data = openpose_editor_elem.toDataURL("image/png");
+        openpose_editor_canvas.getObjects("image").forEach((img) => {
+            img.set({
+                opacity: 1
+            });
+        })
+        if (openpose_editor_canvas.backgroundImage) openpose_editor_canvas.backgroundImage.opacity = 0.5
+        openpose_editor_canvas.renderAll()
+        return base64Data;
+    }
+
+    getMaskBase64Image = function () {
+        // combine canvas to remove transparent background and convert to base64
+        const newCanvas = document.createElement('canvas');
+        newCanvas.width = myCanvas.width;
+        newCanvas.height = myCanvas.height;
+
+        const ctx = newCanvas.getContext('2d');
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, newCanvas.width, newCanvas.height);
+        ctx.drawImage(myCanvas, 0, 0);
+
+        // 创建一个新的缩放的canvas
+        const scaledCanvas = document.createElement('canvas');
+        scaledCanvas.width = originalCanvasWidth; // Use original width
+        scaledCanvas.height = originalCanvasHeight; // Use original height
+
+        // 将newCanvas绘制到缩放的canvas上
+        const scaledCtx = scaledCanvas.getContext('2d');
+        const scale = Math.min(scaledCanvas.width / newCanvas.width, scaledCanvas.height / newCanvas.height);
+        scaledCtx.drawImage(newCanvas, 0, 0, newCanvas.width * scale, newCanvas.height * scale);
+
+        // 导出为DataURL
+        const dataURL = scaledCanvas.toDataURL('image/png');
+        return dataURL;
+    }
+
+
+    toDataURL = function (url, callback) {
+        // read remote image and convert to base64
+        var xhr = new XMLHttpRequest();
+        xhr.onload = function () {
+            var reader = new FileReader();
+            reader.onloadend = function () {
+                callback(reader.result);
+            }
+            reader.readAsDataURL(xhr.response);
+        };
+        xhr.open('GET', url);
+        xhr.responseType = 'blob';
+        xhr.send();
+    }
+
+    
+        addFavorite = function ($ele) {
+            gtag('event', 'btn_click', {
+                'app_name': 'main',
+                'screen_name': 'workbench',
+                'event_type': 'add to favorites before logged in'
+            });
+            let a_ele = `<a href='../account/login?redirect_uri=${current_url}'>logged in</a>`
+            show_status("You must be " + a_ele + " before you can add this image to your Favorites", "warning")
+        }
+    
+
+    convertWebpToJpg = function (webpUrl) {
+        if (!webpUrl) {
+            alert('Image not found.')
+        }
+        return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = webpUrl;
+            img.crossOrigin = "anonymous"
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                canvas.getContext('2d').drawImage(img, 0, 0);
+                canvas.toBlob((blob) => {
+                    resolve(blob);
+                }, 'image/jpeg', 1);
+            };
+            img.onerror = () => {
+                reject(new Error('Failed to load webp image'));
+            };
+        });
+    }
+
+</script>
+</body>
 </html>
