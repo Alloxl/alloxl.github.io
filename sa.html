@@ -1,0 +1,13 @@
+<p id="yazi">Benimle tanışmak için buraya tıklayın</p>
+    <audio id="ses" src="https://cdn.muzikmp3indir.com/mp3_files/7a94e039a07dce2778ccab13929cbd0e.mp3"></audio>
+    <script>
+        // yazıyı seç ve değişkene ata
+        var yazi = document.getElementById("yazi");
+        // ses dosyasını seç ve değişkene ata
+        var ses = document.getElementById("ses");
+        // yazıya tıklama olayı ekle
+        yazi.addEventListener("click", function() {
+            // ses dosyasını oynat
+            ses.play();
+        });
+    </script>
